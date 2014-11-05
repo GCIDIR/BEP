@@ -1,5 +1,5 @@
 class OffersController < ApplicationController
-	autocomplete :country, :name, :full => true
+	autocomplete :city, :name, :full => true, :extra_data => [:country_id], :display_value => :auto_methode
 
 	def index
 		@offers = Offer.all

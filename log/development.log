@@ -6892,3 +6892,3104 @@ Processing by OffersController#autocomplete_country_name as JSON
   Parameters: {"term"=>"gn"}
   [1m[36mCountry Load (0.8ms)[0m  [1mSELECT  countries.id, countries.name FROM `countries`  WHERE (LOWER(countries.name) LIKE '%gn%')  ORDER BY countries.name ASC LIMIT 10[0m
 Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-05 10:53:04 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by OffersController#index as HTML
+  Rendered offers/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 273ms (Views: 247.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2014-11-05 10:53:04 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 10:53:05 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 10:53:05 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-11-05 10:53:05 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-05 10:53:05 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 10:53:05 +0100
+
+
+Started GET "/assets/offers.js?body=1" for 127.0.0.1 at 2014-11-05 10:53:05 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-11-05 10:53:05 +0100
+
+
+Started GET "/assets/autocomplete-rails.js?body=1" for 127.0.0.1 at 2014-11-05 10:53:05 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 10:53:05 +0100
+
+
+Started GET "/offers/autocomplete_country_name?term=gn" for 127.0.0.1 at 2014-11-05 10:53:09 +0100
+Processing by OffersController#autocomplete_country_name as JSON
+  Parameters: {"term"=>"gn"}
+  [1m[35mCountry Load (0.2ms)[0m  SELECT  countries.id, countries.name FROM `countries`  WHERE (LOWER(countries.name) LIKE '%gn%')  ORDER BY countries.name ASC LIMIT 10
+Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/offers/autocomplete_country_name?term=gne" for 127.0.0.1 at 2014-11-05 10:54:08 +0100
+Processing by OffersController#autocomplete_country_name as JSON
+  Parameters: {"term"=>"gne"}
+  [1m[36mCountry Load (0.2ms)[0m  [1mSELECT  countries.id, countries.name FROM `countries`  WHERE (LOWER(countries.name) LIKE '%gne%')  ORDER BY countries.name ASC LIMIT 10[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/offers/autocomplete_country_name?term=fr" for 127.0.0.1 at 2014-11-05 10:54:13 +0100
+Processing by OffersController#autocomplete_country_name as JSON
+  Parameters: {"term"=>"fr"}
+  [1m[35mCountry Load (0.2ms)[0m  SELECT  countries.id, countries.name FROM `countries`  WHERE (LOWER(countries.name) LIKE '%fr%')  ORDER BY countries.name ASC LIMIT 10
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/offers/autocomplete_country_name?term=fr" for 127.0.0.1 at 2014-11-05 10:54:18 +0100
+Processing by OffersController#autocomplete_country_name as JSON
+  Parameters: {"term"=>"fr"}
+  [1m[36mCountry Load (0.2ms)[0m  [1mSELECT  countries.id, countries.name FROM `countries`  WHERE (LOWER(countries.name) LIKE '%fr%')  ORDER BY countries.name ASC LIMIT 10[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/offers/autocomplete_country_name?term=ge" for 127.0.0.1 at 2014-11-05 10:54:21 +0100
+Processing by OffersController#autocomplete_country_name as JSON
+  Parameters: {"term"=>"ge"}
+  [1m[35mCountry Load (0.8ms)[0m  SELECT  countries.id, countries.name FROM `countries`  WHERE (LOWER(countries.name) LIKE '%ge%')  ORDER BY countries.name ASC LIMIT 10
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-11-05 10:54:44 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZiKDhJev2oH6tGhwHJ7GsaD6RkfsYlkSJ7m3XboONEU=", "user"=>{"email"=>"gcidir@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (45.0ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'gcidir@hotmail.com'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 75ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZiKDhJev2oH6tGhwHJ7GsaD6RkfsYlkSJ7m3XboONEU=", "user"=>{"email"=>"gcidir@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/devise-3.3.0/app/views/devise/shared/_links.erb (1.6ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/devise-3.3.0/app/views/devise/sessions/new.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 329ms (Views: 210.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.min.css?body=1" for 127.0.0.1 at 2014-11-05 10:54:45 +0100
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2014-11-05 10:54:45 +0100
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2014-11-05 10:54:45 +0100
+
+
+Started GET "/assets/jquery-ui.structure.min.css?body=1" for 127.0.0.1 at 2014-11-05 10:54:45 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-11-05 10:54:45 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 10:54:45 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 10:54:45 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 10:54:45 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-05 10:54:45 +0100
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-11-05 10:54:45 +0100
+
+
+Started GET "/assets/offers.js?body=1" for 127.0.0.1 at 2014-11-05 10:54:45 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-11-05 10:54:45 +0100
+
+
+Started GET "/assets/autocomplete-rails.js?body=1" for 127.0.0.1 at 2014-11-05 10:54:45 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 10:54:45 +0100
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-11-05 10:54:49 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZiKDhJev2oH6tGhwHJ7GsaD6RkfsYlkSJ7m3XboONEU=", "user"=>{"email"=>"gcidir@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'gcidir@hotmail.com'  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 401 Unauthorized in 2ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZiKDhJev2oH6tGhwHJ7GsaD6RkfsYlkSJ7m3XboONEU=", "user"=>{"email"=>"gcidir@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/devise-3.3.0/app/views/devise/shared/_links.erb (0.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/devise-3.3.0/app/views/devise/sessions/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 286ms (Views: 185.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.structure.min.css?body=1" for 127.0.0.1 at 2014-11-05 10:54:49 +0100
+
+
+Started GET "/assets/jquery-ui.min.css?body=1" for 127.0.0.1 at 2014-11-05 10:54:49 +0100
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2014-11-05 10:54:49 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-11-05 10:54:49 +0100
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2014-11-05 10:54:49 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 10:54:49 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 10:54:49 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 10:54:49 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-05 10:54:49 +0100
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-11-05 10:54:49 +0100
+
+
+Started GET "/assets/offers.js?body=1" for 127.0.0.1 at 2014-11-05 10:54:49 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-11-05 10:54:49 +0100
+
+
+Started GET "/assets/autocomplete-rails.js?body=1" for 127.0.0.1 at 2014-11-05 10:54:49 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 10:54:49 +0100
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-11-05 10:55:05 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZiKDhJev2oH6tGhwHJ7GsaD6RkfsYlkSJ7m3XboONEU=", "user"=>{"email"=>"gcidir@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'gcidir@example.com'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 3ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZiKDhJev2oH6tGhwHJ7GsaD6RkfsYlkSJ7m3XboONEU=", "user"=>{"email"=>"gcidir@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/devise-3.3.0/app/views/devise/shared/_links.erb (0.5ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/devise-3.3.0/app/views/devise/sessions/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 291ms (Views: 188.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.min.css?body=1" for 127.0.0.1 at 2014-11-05 10:55:05 +0100
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2014-11-05 10:55:05 +0100
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2014-11-05 10:55:05 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 10:55:05 +0100
+
+
+Started GET "/assets/jquery-ui.structure.min.css?body=1" for 127.0.0.1 at 2014-11-05 10:55:05 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-11-05 10:55:05 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:05 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:05 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:05 +0100
+
+
+Started GET "/assets/offers.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:05 +0100
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:05 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:05 +0100
+
+
+Started GET "/assets/autocomplete-rails.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:05 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:05 +0100
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-11-05 10:55:08 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZiKDhJev2oH6tGhwHJ7GsaD6RkfsYlkSJ7m3XboONEU=", "user"=>{"email"=>"gcidir@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'gcidir@example.com'  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 401 Unauthorized in 3ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZiKDhJev2oH6tGhwHJ7GsaD6RkfsYlkSJ7m3XboONEU=", "user"=>{"email"=>"gcidir@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/devise-3.3.0/app/views/devise/shared/_links.erb (0.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/devise-3.3.0/app/views/devise/sessions/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 281ms (Views: 178.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.min.css?body=1" for 127.0.0.1 at 2014-11-05 10:55:08 +0100
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2014-11-05 10:55:08 +0100
+
+
+Started GET "/assets/jquery-ui.structure.min.css?body=1" for 127.0.0.1 at 2014-11-05 10:55:08 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-11-05 10:55:08 +0100
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2014-11-05 10:55:08 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 10:55:08 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:08 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:08 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:08 +0100
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:08 +0100
+
+
+Started GET "/assets/offers.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:08 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:09 +0100
+
+
+Started GET "/assets/autocomplete-rails.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:09 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:09 +0100
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-11-05 10:55:41 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZiKDhJev2oH6tGhwHJ7GsaD6RkfsYlkSJ7m3XboONEU=", "user"=>{"email"=>"idir@example.fr", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (36.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'idir@example.fr'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 140ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZiKDhJev2oH6tGhwHJ7GsaD6RkfsYlkSJ7m3XboONEU=", "user"=>{"email"=>"idir@example.fr", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/devise-3.3.0/app/views/devise/shared/_links.erb (0.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/devise-3.3.0/app/views/devise/sessions/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 282ms (Views: 181.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.min.css?body=1" for 127.0.0.1 at 2014-11-05 10:55:41 +0100
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2014-11-05 10:55:41 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:41 +0100
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2014-11-05 10:55:41 +0100
+
+
+Started GET "/assets/jquery-ui.structure.min.css?body=1" for 127.0.0.1 at 2014-11-05 10:55:41 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-11-05 10:55:41 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 10:55:41 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:41 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:41 +0100
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:41 +0100
+
+
+Started GET "/assets/offers.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:41 +0100
+
+
+Started GET "/assets/autocomplete-rails.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:41 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:41 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:41 +0100
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-11-05 10:55:46 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZiKDhJev2oH6tGhwHJ7GsaD6RkfsYlkSJ7m3XboONEU=", "user"=>{"email"=>"idir@example.fr", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'idir@example.fr'  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (332.8ms)[0m  UPDATE `users` SET `current_sign_in_at` = '2014-11-05 09:55:46', `sign_in_count` = 2 WHERE `users`.`id` = 1
+  [1m[36m (203.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/admin/country
+Completed 302 Found in 678ms (ActiveRecord: 536.8ms)
+
+
+Started GET "/admin/country" for 127.0.0.1 at 2014-11-05 10:55:46 +0100
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"country"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCountry Load (0.2ms)[0m  [1mSELECT  `countries`.* FROM `countries`   ORDER BY countries.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35mCity Load (0.2ms)[0m  SELECT `cities`.* FROM `cities`  WHERE `cities`.`country_id` = 2
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT `cities`.* FROM `cities`  WHERE `cities`.`country_id` = 1[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM `countries`
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (110.8ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/layouts/rails_admin/_secondary_navigation.html.haml (7.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/layouts/rails_admin/pjax.html.haml (7.9ms)
+Completed 200 OK in 863ms (Views: 790.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.css?body=1" for 127.0.0.1 at 2014-11-05 10:55:47 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:47 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:47 +0100
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/rails_admin/jquery.remotipart.fixed.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/rails_admin/ra.i18n.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/rails_admin/rails_admin.js?body=1" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/assets/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2014-11-05 10:55:48 +0100
+
+
+Started GET "/admin/country/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-05 10:55:52 +0100
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"country"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/_form_field.html.haml (1.3ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `cities`
+  [1m[36mCity Load (0.1ms)[0m  [1mSELECT `cities`.* FROM `cities`   ORDER BY cities.id desc[0m
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/_form_filtering_multiselect.html.haml (28.0ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/_submit_buttons.html.haml (3.9ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (213.2ms)
+Completed 200 OK in 231ms (Views: 223.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/rails_admin/multiselect/icon_sprite.png" for 127.0.0.1 at 2014-11-05 10:55:53 +0100
+
+
+Started POST "/admin/country/new" for 127.0.0.1 at 2014-11-05 10:56:01 +0100
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b/dSxFJEbJr0geB/Rr2fM5iQcFmgwo7akePz2F0CSjk=", "country"=>{"name"=>"Algerie", "code_iso"=>"", "city_ids"=>["", ""]}, "return_to"=>"http://127.0.0.1:3000/admin/country", "_save"=>"", "model_name"=>"country"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (52.7ms)[0m  INSERT INTO `countries` (`code_iso`, `created_at`, `name`, `updated_at`) VALUES ('', '2014-11-05 09:56:01', 'Algerie', '2014-11-05 09:56:01')
+  [1m[36m (253.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/admin/country
+Completed 302 Found in 320ms (ActiveRecord: 306.9ms)
+
+
+Started GET "/admin/country" for 127.0.0.1 at 2014-11-05 10:56:01 +0100
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"country"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCountry Load (0.5ms)[0m  [1mSELECT  `countries`.* FROM `countries`   ORDER BY countries.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35mCity Load (0.5ms)[0m  SELECT `cities`.* FROM `cities`  WHERE `cities`.`country_id` = 3
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT `cities`.* FROM `cities`  WHERE `cities`.`country_id` = 2[0m
+  [1m[35mCity Load (0.2ms)[0m  SELECT `cities`.* FROM `cities`  WHERE `cities`.`country_id` = 1
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM `countries`[0m
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (35.9ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.5ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/layouts/rails_admin/pjax.html.haml (6.2ms)
+Completed 200 OK in 433ms (Views: 425.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/rails_admin/jquery.remotipart.fixed.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/rails_admin/rails_admin.css?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/rails_admin/ra.i18n.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/rails_admin/rails_admin.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/assets/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2014-11-05 10:56:02 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-05 10:56:08 +0100
+Processing by OffersController#index as HTML
+  Rendered offers/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 182ms (Views: 181.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2014-11-05 10:56:08 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-11-05 10:56:08 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:08 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:08 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 10:56:08 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:08 +0100
+
+
+Started GET "/assets/offers.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:08 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:08 +0100
+
+
+Started GET "/assets/autocomplete-rails.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:08 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 10:56:08 +0100
+
+
+Started GET "/offers/autocomplete_country_name?term=al" for 127.0.0.1 at 2014-11-05 10:56:12 +0100
+Processing by OffersController#autocomplete_country_name as JSON
+  Parameters: {"term"=>"al"}
+  [1m[35mCountry Load (0.9ms)[0m  SELECT  countries.id, countries.name FROM `countries`  WHERE (LOWER(countries.name) LIKE '%al%')  ORDER BY countries.name ASC LIMIT 10
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/offers/autocomplete_country_name?term=fra" for 127.0.0.1 at 2014-11-05 10:57:41 +0100
+Processing by OffersController#autocomplete_country_name as JSON
+  Parameters: {"term"=>"fra"}
+  [1m[36mCountry Load (0.7ms)[0m  [1mSELECT  countries.id, countries.name FROM `countries`  WHERE (LOWER(countries.name) LIKE '%fra%')  ORDER BY countries.name ASC LIMIT 10[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/offers/autocomplete_country_name?term=frac" for 127.0.0.1 at 2014-11-05 10:57:41 +0100
+Processing by OffersController#autocomplete_country_name as JSON
+  Parameters: {"term"=>"frac"}
+  [1m[35mCountry Load (0.7ms)[0m  SELECT  countries.id, countries.name FROM `countries`  WHERE (LOWER(countries.name) LIKE '%frac%')  ORDER BY countries.name ASC LIMIT 10
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/offers/autocomplete_country_name?term=fra" for 127.0.0.1 at 2014-11-05 10:57:42 +0100
+Processing by OffersController#autocomplete_country_name as JSON
+  Parameters: {"term"=>"fra"}
+  [1m[36mCountry Load (0.2ms)[0m  [1mSELECT  countries.id, countries.name FROM `countries`  WHERE (LOWER(countries.name) LIKE '%fra%')  ORDER BY countries.name ASC LIMIT 10[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-05 11:02:58 +0100
+Processing by OffersController#index as HTML
+  Rendered offers/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 182ms (Views: 181.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:02:58 +0100
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:02:58 +0100
+
+
+Started GET "/assets/jquery-ui.structure.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:02:58 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 11:02:58 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-11-05 11:02:58 +0100
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2014-11-05 11:02:58 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 11:02:58 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 11:02:58 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-05 11:02:58 +0100
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-11-05 11:02:58 +0100
+
+
+Started GET "/assets/offers.js?body=1" for 127.0.0.1 at 2014-11-05 11:02:58 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-11-05 11:02:58 +0100
+
+
+Started GET "/assets/autocomplete-rails.js?body=1" for 127.0.0.1 at 2014-11-05 11:02:58 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 11:02:58 +0100
+
+
+Started GET "/admin/?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-05 11:03:02 +0100
+Processing by RailsAdmin::MainController#dashboard as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `cities`[0m
+  [1m[35mCity Load (0.1ms)[0m  SELECT  `cities`.* FROM `cities`   ORDER BY cities.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `comments`[0m
+  [1m[35mComment Load (0.1ms)[0m  SELECT  `comments`.* FROM `comments`   ORDER BY comments.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `countries`[0m
+  [1m[35mCountry Load (0.3ms)[0m  SELECT  `countries`.* FROM `countries`   ORDER BY countries.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `locomotives`[0m
+  [1m[35mLocomotive Load (0.2ms)[0m  SELECT  `locomotives`.* FROM `locomotives`   ORDER BY locomotives.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `offers`[0m
+  [1m[35mOffer Load (0.2ms)[0m  SELECT  `offers`.* FROM `offers`   ORDER BY offers.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `orders`[0m
+  [1m[35mOrder Load (0.1ms)[0m  SELECT  `orders`.* FROM `orders`   ORDER BY orders.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `packets`[0m
+  [1m[35mPacket Load (0.1ms)[0m  SELECT  `packets`.* FROM `packets`   ORDER BY packets.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `user_trackers`
+  [1m[36mUserTracker Load (0.1ms)[0m  [1mSELECT  `user_trackers`.* FROM `user_trackers`   ORDER BY user_trackers.updated_at desc LIMIT 1[0m
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/pjax (70.5ms)
+Completed 200 OK in 170ms (Views: 115.0ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/admin/city?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-05 11:04:12 +0100
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"city"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT  `cities`.* FROM `cities`   ORDER BY cities.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `cities`
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (30.5ms)
+Completed 200 OK in 48ms (Views: 39.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/comment?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-05 11:04:16 +0100
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"comment"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mComment Load (0.1ms)[0m  SELECT  `comments`.* FROM `comments`   ORDER BY comments.id desc LIMIT 20 OFFSET 0
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `comments`[0m
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (22.5ms)
+Completed 200 OK in 48ms (Views: 31.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin/country?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-05 11:04:17 +0100
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"country"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCountry Load (0.2ms)[0m  [1mSELECT  `countries`.* FROM `countries`   ORDER BY countries.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35mCity Load (0.2ms)[0m  SELECT `cities`.* FROM `cities`  WHERE `cities`.`country_id` = 3
+  [1m[36mCity Load (0.2ms)[0m  [1mSELECT `cities`.* FROM `cities`  WHERE `cities`.`country_id` = 2[0m
+  [1m[35mCity Load (0.2ms)[0m  SELECT `cities`.* FROM `cities`  WHERE `cities`.`country_id` = 1
+  [1m[36m (1.7ms)[0m  [1mSELECT COUNT(*) FROM `countries`[0m
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (46.5ms)
+Completed 200 OK in 68ms (Views: 57.4ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/admin/country?utf8=%E2%9C%93&query=al&_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-05 11:04:20 +0100
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>"al", "_pjax"=>"[data-pjax-container]", "model_name"=>"country"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCountry Load (0.4ms)[0m  [1mSELECT  `countries`.* FROM `countries`  WHERE ((LOWER(countries.name) LIKE '%al%') OR (LOWER(countries.code_iso) LIKE '%al%'))  ORDER BY countries.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35mCity Load (0.2ms)[0m  SELECT `cities`.* FROM `cities`  WHERE `cities`.`country_id` = 3
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `countries`  WHERE ((LOWER(countries.name) LIKE '%al%') OR (LOWER(countries.code_iso) LIKE '%al%'))[0m
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (32.1ms)
+Completed 200 OK in 51ms (Views: 40.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/offers/autocomplete_country_name?term=fr" for 127.0.0.1 at 2014-11-05 11:05:14 +0100
+Processing by OffersController#autocomplete_country_name as JSON
+  Parameters: {"term"=>"fr"}
+  [1m[35mCountry Load (0.7ms)[0m  SELECT  countries.id, countries.name FROM `countries`  WHERE (LOWER(countries.name) LIKE '%fr%')  ORDER BY countries.name ASC LIMIT 10
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/offers/autocomplete_country_name?term=es" for 127.0.0.1 at 2014-11-05 11:05:17 +0100
+Processing by OffersController#autocomplete_country_name as JSON
+  Parameters: {"term"=>"es"}
+  [1m[36mCountry Load (0.7ms)[0m  [1mSELECT  countries.id, countries.name FROM `countries`  WHERE (LOWER(countries.name) LIKE '%es%')  ORDER BY countries.name ASC LIMIT 10[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/offers/search" for 127.0.0.1 at 2014-11-05 11:05:19 +0100
+Processing by OffersController#search as JS
+  Parameters: {"utf8"=>"✓", "offer"=>{"country_name"=>"espagne"}, "commit"=>"search "}
+  [1m[35mOffer Load (0.1ms)[0m  SELECT `offers`.* FROM `offers`  WHERE `offers`.`departure` IS NULL AND `offers`.`destination` IS NULL
+  Rendered offers/search.js.erb (1.3ms)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/offers/autocomplete_country_name?term=es" for 127.0.0.1 at 2014-11-05 11:07:19 +0100
+Processing by OffersController#autocomplete_country_name as JSON
+  Parameters: {"term"=>"es"}
+  [1m[36mCountry Load (0.2ms)[0m  [1mSELECT  countries.id, countries.name FROM `countries`  WHERE (LOWER(countries.name) LIKE '%es%')  ORDER BY countries.name ASC LIMIT 10[0m
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-05 11:29:20 +0100
+Processing by OffersController#index as HTML
+  Rendered offers/index.html.erb within layouts/application (26.0ms)
+Completed 500 Internal Server Error in 64ms
+
+SyntaxError (/home/gaci/Documents/BEP/app/views/offers/index.html.erb:4: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+...te_country_name_offers_path id: 'destination');@output_buffe...
+...                               ^):
+  app/views/offers/index.html.erb:4: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-05 11:29:42 +0100
+Processing by OffersController#index as HTML
+  Rendered offers/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 214ms (Views: 212.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:29:43 +0100
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:29:43 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-11-05 11:29:43 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 11:29:43 +0100
+
+
+Started GET "/assets/jquery-ui.structure.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:29:43 +0100
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2014-11-05 11:29:43 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 11:29:43 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-05 11:29:43 +0100
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-11-05 11:29:43 +0100
+
+
+Started GET "/assets/offers.js?body=1" for 127.0.0.1 at 2014-11-05 11:29:43 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-11-05 11:29:43 +0100
+
+
+Started GET "/assets/autocomplete-rails.js?body=1" for 127.0.0.1 at 2014-11-05 11:29:43 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 11:29:43 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 11:29:43 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-05 11:29:58 +0100
+Processing by OffersController#index as HTML
+  Rendered offers/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 176ms (Views: 175.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:29:58 +0100
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2014-11-05 11:29:59 +0100
+
+
+Started GET "/assets/jquery-ui.structure.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:29:59 +0100
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:29:59 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-11-05 11:29:59 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 11:29:59 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 11:29:59 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 11:29:59 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-05 11:29:59 +0100
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-11-05 11:29:59 +0100
+
+
+Started GET "/assets/offers.js?body=1" for 127.0.0.1 at 2014-11-05 11:29:59 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-11-05 11:29:59 +0100
+
+
+Started GET "/assets/autocomplete-rails.js?body=1" for 127.0.0.1 at 2014-11-05 11:29:59 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 11:29:59 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-05 11:32:32 +0100
+Processing by OffersController#index as HTML
+  Rendered offers/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 164ms (Views: 163.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:32:33 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 11:32:33 +0100
+
+
+Started GET "/assets/jquery-ui.structure.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:32:33 +0100
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2014-11-05 11:32:33 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-11-05 11:32:33 +0100
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:32:33 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 11:32:33 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 11:32:33 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-05 11:32:33 +0100
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-11-05 11:32:33 +0100
+
+
+Started GET "/assets/offers.js?body=1" for 127.0.0.1 at 2014-11-05 11:32:33 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-11-05 11:32:33 +0100
+
+
+Started GET "/assets/autocomplete-rails.js?body=1" for 127.0.0.1 at 2014-11-05 11:32:33 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 11:32:33 +0100
+
+
+Started GET "/assets/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" for 127.0.0.1 at 2014-11-05 11:32:41 +0100
+
+
+Started GET "/offers/autocomplete_country_name?term=fr" for 127.0.0.1 at 2014-11-05 11:32:42 +0100
+Processing by OffersController#autocomplete_country_name as JSON
+  Parameters: {"term"=>"fr"}
+  [1m[35mCountry Load (0.2ms)[0m  SELECT  countries.id, countries.name FROM `countries`  WHERE (LOWER(countries.name) LIKE '%fr%')  ORDER BY countries.name ASC LIMIT 10
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/images/ui-bg_glass_100_fdf5ce_1x400.png" for 127.0.0.1 at 2014-11-05 11:32:43 +0100
+
+
+Started GET "/offers/autocomplete_country_name?term=de" for 127.0.0.1 at 2014-11-05 11:32:44 +0100
+Processing by OffersController#autocomplete_country_name as JSON
+  Parameters: {"term"=>"de"}
+  [1m[36mCountry Load (66.1ms)[0m  [1mSELECT  countries.id, countries.name FROM `countries`  WHERE (LOWER(countries.name) LIKE '%de%')  ORDER BY countries.name ASC LIMIT 10[0m
+Completed 200 OK in 68ms (Views: 0.1ms | ActiveRecord: 66.1ms)
+
+
+Started GET "/offers/autocomplete_country_name?term=des" for 127.0.0.1 at 2014-11-05 11:32:45 +0100
+Processing by OffersController#autocomplete_country_name as JSON
+  Parameters: {"term"=>"des"}
+  [1m[35mCountry Load (0.4ms)[0m  SELECT  countries.id, countries.name FROM `countries`  WHERE (LOWER(countries.name) LIKE '%des%')  ORDER BY countries.name ASC LIMIT 10
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/offers/autocomplete_country_name?term=es" for 127.0.0.1 at 2014-11-05 11:32:47 +0100
+Processing by OffersController#autocomplete_country_name as JSON
+  Parameters: {"term"=>"es"}
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT  countries.id, countries.name FROM `countries`  WHERE (LOWER(countries.name) LIKE '%es%')  ORDER BY countries.name ASC LIMIT 10[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/offers/search" for 127.0.0.1 at 2014-11-05 11:32:49 +0100
+Processing by OffersController#search as JS
+  Parameters: {"utf8"=>"✓", "offer"=>{"departure"=>"france", "destination"=>"espagne"}, "commit"=>"search "}
+  [1m[35mOffer Load (0.4ms)[0m  SELECT `offers`.* FROM `offers`  WHERE `offers`.`departure` = 'france' AND `offers`.`destination` = 'espagne'
+  Rendered offers/search.js.erb (60.5ms)
+Completed 200 OK in 71ms (Views: 9.1ms | ActiveRecord: 59.1ms)
+
+
+Started GET "/offers/autocomplete_country_name?term=paris" for 127.0.0.1 at 2014-11-05 11:32:52 +0100
+Processing by OffersController#autocomplete_country_name as JSON
+  Parameters: {"term"=>"paris"}
+  [1m[36mCountry Load (0.7ms)[0m  [1mSELECT  countries.id, countries.name FROM `countries`  WHERE (LOWER(countries.name) LIKE '%paris%')  ORDER BY countries.name ASC LIMIT 10[0m
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/offers/search" for 127.0.0.1 at 2014-11-05 11:39:59 +0100
+Processing by OffersController#search as JS
+  Parameters: {"utf8"=>"✓", "offer"=>{"departure"=>"paris", "destination"=>"espagne"}, "commit"=>"search "}
+  [1m[35mOffer Load (1.1ms)[0m  SELECT `offers`.* FROM `offers`  WHERE `offers`.`departure` = 'paris' AND `offers`.`destination` = 'espagne'
+  Rendered offers/search.js.erb (3.3ms)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-11-05 11:41:24 +0100
+Processing by RailsAdmin::MainController#dashboard as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-11-05 11:41:24 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/devise-3.3.0/app/views/devise/shared/_links.erb (0.5ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/devise-3.3.0/app/views/devise/sessions/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 201ms (Views: 181.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery-ui.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:41:24 +0100
+
+
+Started GET "/assets/jquery-ui.structure.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:41:24 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 11:41:24 +0100
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:41:25 +0100
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2014-11-05 11:41:25 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-11-05 11:41:25 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 11:41:25 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-05 11:41:25 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 11:41:25 +0100
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-11-05 11:41:25 +0100
+
+
+Started GET "/assets/offers.js?body=1" for 127.0.0.1 at 2014-11-05 11:41:25 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-11-05 11:41:25 +0100
+
+
+Started GET "/assets/autocomplete-rails.js?body=1" for 127.0.0.1 at 2014-11-05 11:41:25 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 11:41:25 +0100
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-11-05 11:41:40 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K5TApBnLKxGhyLJMmlQlTzfpgob0cOPS753+V51Yysw=", "user"=>{"email"=>"idir@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'idir@example.com'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 4ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K5TApBnLKxGhyLJMmlQlTzfpgob0cOPS753+V51Yysw=", "user"=>{"email"=>"idir@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/devise-3.3.0/app/views/devise/shared/_links.erb (0.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/devise-3.3.0/app/views/devise/sessions/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 282ms (Views: 179.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.structure.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:41:40 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-11-05 11:41:41 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 11:41:41 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 11:41:41 +0100
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2014-11-05 11:41:41 +0100
+
+
+Started GET "/assets/jquery-ui.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:41:41 +0100
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:41:41 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 11:41:41 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-05 11:41:41 +0100
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-11-05 11:41:41 +0100
+
+
+Started GET "/assets/offers.js?body=1" for 127.0.0.1 at 2014-11-05 11:41:41 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-11-05 11:41:41 +0100
+
+
+Started GET "/assets/autocomplete-rails.js?body=1" for 127.0.0.1 at 2014-11-05 11:41:41 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 11:41:41 +0100
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-11-05 11:41:46 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K5TApBnLKxGhyLJMmlQlTzfpgob0cOPS753+V51Yysw=", "user"=>{"email"=>"idir@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'idir@example.com'  ORDER BY `users`.`id` ASC LIMIT 1
+Completed 401 Unauthorized in 2ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K5TApBnLKxGhyLJMmlQlTzfpgob0cOPS753+V51Yysw=", "user"=>{"email"=>"idir@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/devise-3.3.0/app/views/devise/shared/_links.erb (0.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/devise-3.3.0/app/views/devise/sessions/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 276ms (Views: 174.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:41:47 +0100
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:41:47 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-11-05 11:41:47 +0100
+
+
+Started GET "/assets/jquery-ui.structure.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:41:47 +0100
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2014-11-05 11:41:47 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 11:41:47 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 11:41:47 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 11:41:47 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-05 11:41:47 +0100
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-11-05 11:41:47 +0100
+
+
+Started GET "/assets/offers.js?body=1" for 127.0.0.1 at 2014-11-05 11:41:47 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-11-05 11:41:47 +0100
+
+
+Started GET "/assets/autocomplete-rails.js?body=1" for 127.0.0.1 at 2014-11-05 11:41:47 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 11:41:47 +0100
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-11-05 11:41:55 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K5TApBnLKxGhyLJMmlQlTzfpgob0cOPS753+V51Yysw=", "user"=>{"email"=>"idir@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'idir@example.com'  ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 3ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K5TApBnLKxGhyLJMmlQlTzfpgob0cOPS753+V51Yysw=", "user"=>{"email"=>"idir@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/devise-3.3.0/app/views/devise/shared/_links.erb (0.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/devise-3.3.0/app/views/devise/sessions/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 316ms (Views: 214.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:41:55 +0100
+
+
+Started GET "/assets/jquery-ui.structure.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:41:55 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-11-05 11:41:55 +0100
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2014-11-05 11:41:55 +0100
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:41:55 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 11:41:55 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 11:41:55 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 11:41:55 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-05 11:41:55 +0100
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-11-05 11:41:55 +0100
+
+
+Started GET "/assets/offers.js?body=1" for 127.0.0.1 at 2014-11-05 11:41:55 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-11-05 11:41:55 +0100
+
+
+Started GET "/assets/autocomplete-rails.js?body=1" for 127.0.0.1 at 2014-11-05 11:41:55 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 11:41:55 +0100
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-11-05 11:42:17 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K5TApBnLKxGhyLJMmlQlTzfpgob0cOPS753+V51Yysw=", "user"=>{"email"=>"idir@example.fr", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (33.5ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`email` = 'idir@example.fr'  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  UPDATE `users` SET `current_sign_in_at` = '2014-11-05 10:42:17', `last_sign_in_at` = '2014-11-05 09:55:46', `sign_in_count` = 3 WHERE `users`.`id` = 1
+  [1m[36m (210.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/admin/
+Completed 302 Found in 367ms (ActiveRecord: 245.3ms)
+
+
+Started GET "/admin/" for 127.0.0.1 at 2014-11-05 11:42:17 +0100
+Processing by RailsAdmin::MainController#dashboard as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `cities`[0m
+  [1m[35mCity Load (0.2ms)[0m  SELECT  `cities`.* FROM `cities`   ORDER BY cities.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `comments`[0m
+  [1m[35mComment Load (0.2ms)[0m  SELECT  `comments`.* FROM `comments`   ORDER BY comments.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `countries`[0m
+  [1m[35mCountry Load (0.3ms)[0m  SELECT  `countries`.* FROM `countries`   ORDER BY countries.updated_at desc LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `locomotives`[0m
+  [1m[35mLocomotive Load (0.3ms)[0m  SELECT  `locomotives`.* FROM `locomotives`   ORDER BY locomotives.updated_at desc LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `offers`[0m
+  [1m[35mOffer Load (0.2ms)[0m  SELECT  `offers`.* FROM `offers`   ORDER BY offers.updated_at desc LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `orders`[0m
+  [1m[35mOrder Load (0.3ms)[0m  SELECT  `orders`.* FROM `orders`   ORDER BY orders.updated_at desc LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `packets`[0m
+  [1m[35mPacket Load (0.2ms)[0m  SELECT  `packets`.* FROM `packets`   ORDER BY packets.updated_at desc LIMIT 1
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM `users`[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `user_trackers`
+  [1m[36mUserTracker Load (0.1ms)[0m  [1mSELECT  `user_trackers`.* FROM `user_trackers`   ORDER BY user_trackers.updated_at desc LIMIT 1[0m
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/dashboard.html.haml within layouts/rails_admin/application (55.7ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.7ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/layouts/rails_admin/pjax.html.haml (1.9ms)
+Completed 200 OK in 487ms (Views: 419.6ms | ActiveRecord: 17.6ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/rails_admin/jquery.remotipart.fixed.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/rails_admin/rails_admin.css?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/rails_admin/ra.i18n.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/rails_admin/rails_admin.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:18 +0100
+
+
+Started GET "/assets/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2014-11-05 11:42:19 +0100
+
+
+Started GET "/admin/city?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-05 11:42:26 +0100
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"city"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCity Load (0.1ms)[0m  [1mSELECT  `cities`.* FROM `cities`   ORDER BY cities.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `cities`
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/pjax (17.1ms)
+Completed 200 OK in 38ms (Views: 26.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/city/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-05 11:42:31 +0100
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"city"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `countries`
+  [1m[36mCountry Load (0.3ms)[0m  [1mSELECT `countries`.* FROM `countries`   ORDER BY countries.id desc[0m
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/_form_filtering_select.html.haml (154.8ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/_submit_buttons.html.haml (1.1ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (1423.7ms)
+Completed 200 OK in 1441ms (Views: 1433.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/rails_admin/aristo/images/ui-icons_454545_256x240.png" for 127.0.0.1 at 2014-11-05 11:42:33 +0100
+
+
+Started POST "/admin/city/new" for 127.0.0.1 at 2014-11-05 11:42:39 +0100
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VuXWPxM0AzjAflLC6EAN9LmiVqy9RjyN/Yf2OgWIkWg=", "city"=>{"name"=>"paris", "country_id"=>"1"}, "return_to"=>"http://127.0.0.1:3000/admin/city", "_save"=>"", "model_name"=>"city"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO `cities` (`country_id`, `created_at`, `name`, `updated_at`) VALUES ('1', '2014-11-05 10:42:39', 'paris', '2014-11-05 10:42:39')
+  [1m[36m (163.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/admin/city
+Completed 302 Found in 176ms (ActiveRecord: 164.4ms)
+
+
+Started GET "/admin/city" for 127.0.0.1 at 2014-11-05 11:42:39 +0100
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"city"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  `cities`.* FROM `cities`   ORDER BY cities.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35mCountry Load (0.7ms)[0m  SELECT `countries`.* FROM `countries`  WHERE `countries`.`id` IN (1)
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM `cities`[0m
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (171.3ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/layouts/rails_admin/_secondary_navigation.html.haml (3.1ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/layouts/rails_admin/pjax.html.haml (10.4ms)
+Completed 200 OK in 540ms (Views: 533.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.css?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/rails_admin/jquery.remotipart.fixed.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/rails_admin/ra.i18n.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/assets/rails_admin/rails_admin.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:40 +0100
+
+
+Started GET "/admin/city/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-05 11:42:43 +0100
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"city"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/_form_field.html.haml (0.5ms)
+  [1m[36mCountry Load (0.2ms)[0m  [1mSELECT `countries`.* FROM `countries`   ORDER BY countries.id desc[0m
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/_form_filtering_select.html.haml (7.0ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/_submit_buttons.html.haml (1.2ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (19.1ms)
+Completed 200 OK in 39ms (Views: 30.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/admin/city/new" for 127.0.0.1 at 2014-11-05 11:42:48 +0100
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VuXWPxM0AzjAflLC6EAN9LmiVqy9RjyN/Yf2OgWIkWg=", "city"=>{"name"=>"nancy", "country_id"=>"1"}, "return_to"=>"http://127.0.0.1:3000/admin/city", "_save"=>"", "model_name"=>"city"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `cities` (`country_id`, `created_at`, `name`, `updated_at`) VALUES ('1', '2014-11-05 10:42:48', 'nancy', '2014-11-05 10:42:48')
+  [1m[36m (176.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/admin/city
+Completed 302 Found in 186ms (ActiveRecord: 177.2ms)
+
+
+Started GET "/admin/city" for 127.0.0.1 at 2014-11-05 11:42:48 +0100
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"city"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCity Load (0.6ms)[0m  [1mSELECT  `cities`.* FROM `cities`   ORDER BY cities.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35mCountry Load (0.2ms)[0m  SELECT `countries`.* FROM `countries`  WHERE `countries`.`id` IN (1)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM `cities`[0m
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (31.8ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.5ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/layouts/rails_admin/pjax.html.haml (6.4ms)
+Completed 200 OK in 418ms (Views: 408.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:48 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:48 +0100
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/rails_admin/rails_admin.css?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/rails_admin/jquery.remotipart.fixed.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/rails_admin/ra.i18n.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/assets/rails_admin/rails_admin.js?body=1" for 127.0.0.1 at 2014-11-05 11:42:49 +0100
+
+
+Started GET "/admin/city/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-05 11:42:51 +0100
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"city"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/_form_field.html.haml (0.3ms)
+  [1m[36mCountry Load (0.2ms)[0m  [1mSELECT `countries`.* FROM `countries`   ORDER BY countries.id desc[0m
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/_form_filtering_select.html.haml (4.5ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/_submit_buttons.html.haml (1.0ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (16.6ms)
+Completed 200 OK in 35ms (Views: 27.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/admin/city/new" for 127.0.0.1 at 2014-11-05 11:43:05 +0100
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VuXWPxM0AzjAflLC6EAN9LmiVqy9RjyN/Yf2OgWIkWg=", "city"=>{"name"=>"metz", "country_id"=>"1"}, "return_to"=>"http://127.0.0.1:3000/admin/city", "_save"=>"", "model_name"=>"city"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `cities` (`country_id`, `created_at`, `name`, `updated_at`) VALUES ('1', '2014-11-05 10:43:05', 'metz', '2014-11-05 10:43:05')
+  [1m[36m (367.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/admin/city
+Completed 302 Found in 381ms (ActiveRecord: 367.7ms)
+
+
+Started GET "/admin/city" for 127.0.0.1 at 2014-11-05 11:43:05 +0100
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"city"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCity Load (0.4ms)[0m  [1mSELECT  `cities`.* FROM `cities`   ORDER BY cities.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35mCountry Load (0.2ms)[0m  SELECT `countries`.* FROM `countries`  WHERE `countries`.`id` IN (1)
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM `cities`[0m
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (34.2ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.5ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/layouts/rails_admin/pjax.html.haml (5.6ms)
+Completed 200 OK in 421ms (Views: 412.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.css?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/rails_admin/jquery.remotipart.fixed.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/rails_admin/ra.i18n.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/assets/rails_admin/rails_admin.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:06 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-05 11:43:23 +0100
+Processing by OffersController#index as HTML
+  Rendered offers/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 175ms (Views: 171.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:43:23 +0100
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2014-11-05 11:43:23 +0100
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:43:23 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 11:43:23 +0100
+
+
+Started GET "/assets/jquery-ui.structure.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:43:23 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-11-05 11:43:23 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:23 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:23 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:23 +0100
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:23 +0100
+
+
+Started GET "/assets/offers.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:23 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:23 +0100
+
+
+Started GET "/assets/autocomplete-rails.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:23 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 11:43:23 +0100
+
+
+Started GET "/offers/autocomplete_country_name?term=pa" for 127.0.0.1 at 2014-11-05 11:43:28 +0100
+
+AbstractController::ActionNotFound (The action 'autocomplete_country_name' could not be found for OffersController):
+  actionpack (4.1.5) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack-pjax (0.8.0) lib/rack/pjax.rb:12:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  remotipart (1.2.1) lib/remotipart/middleware.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/gaci/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/gaci/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/gaci/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.text.erb (1.1ms)
+
+
+Started GET "/offers/autocomplete_country_name?term=par" for 127.0.0.1 at 2014-11-05 11:43:30 +0100
+
+AbstractController::ActionNotFound (The action 'autocomplete_country_name' could not be found for OffersController):
+  actionpack (4.1.5) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack-pjax (0.8.0) lib/rack/pjax.rb:12:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  remotipart (1.2.1) lib/remotipart/middleware.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/gaci/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/gaci/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/gaci/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.text.erb (0.5ms)
+
+
+Started GET "/offers/autocomplete_country_name?term=paris" for 127.0.0.1 at 2014-11-05 11:43:33 +0100
+
+AbstractController::ActionNotFound (The action 'autocomplete_country_name' could not be found for OffersController):
+  actionpack (4.1.5) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.5) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.5) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.5) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack-pjax (0.8.0) lib/rack/pjax.rb:12:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  remotipart (1.2.1) lib/remotipart/middleware.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.5) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.5) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/gaci/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/gaci/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/gaci/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/unknown_action.text.erb (0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-05 11:44:09 +0100
+Processing by OffersController#index as HTML
+  Rendered offers/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 173ms (Views: 170.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:44:09 +0100
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:44:09 +0100
+
+
+Started GET "/assets/jquery-ui.structure.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:44:09 +0100
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2014-11-05 11:44:09 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 11:44:09 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-11-05 11:44:09 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 11:44:09 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 11:44:09 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-05 11:44:09 +0100
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-11-05 11:44:09 +0100
+
+
+Started GET "/assets/offers.js?body=1" for 127.0.0.1 at 2014-11-05 11:44:09 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-11-05 11:44:09 +0100
+
+
+Started GET "/assets/autocomplete-rails.js?body=1" for 127.0.0.1 at 2014-11-05 11:44:09 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 11:44:09 +0100
+
+
+Started GET "/offers/autocomplete_city_name?term=pa" for 127.0.0.1 at 2014-11-05 11:44:11 +0100
+Processing by OffersController#autocomplete_city_name as JSON
+  Parameters: {"term"=>"pa"}
+  [1m[35mCity Load (0.3ms)[0m  SELECT  cities.id, cities.name FROM `cities`  WHERE (LOWER(cities.name) LIKE '%pa%')  ORDER BY cities.name ASC LIMIT 10
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/offers/autocomplete_city_name?term=me" for 127.0.0.1 at 2014-11-05 11:44:16 +0100
+Processing by OffersController#autocomplete_city_name as JSON
+  Parameters: {"term"=>"me"}
+  [1m[36mCity Load (0.7ms)[0m  [1mSELECT  cities.id, cities.name FROM `cities`  WHERE (LOWER(cities.name) LIKE '%me%')  ORDER BY cities.name ASC LIMIT 10[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/offers/search" for 127.0.0.1 at 2014-11-05 11:44:18 +0100
+Processing by OffersController#search as JS
+  Parameters: {"utf8"=>"✓", "offer"=>{"departure"=>"paris", "destination"=>"metz"}, "commit"=>"search "}
+  [1m[35mOffer Load (0.3ms)[0m  SELECT `offers`.* FROM `offers`  WHERE `offers`.`departure` = 'paris' AND `offers`.`destination` = 'metz'
+  Rendered offers/search.js.erb (6.0ms)
+Completed 200 OK in 20ms (Views: 15.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/offers/autocomplete_city_name?term=na" for 127.0.0.1 at 2014-11-05 11:44:20 +0100
+Processing by OffersController#autocomplete_city_name as JSON
+  Parameters: {"term"=>"na"}
+  [1m[36mCity Load (0.8ms)[0m  [1mSELECT  cities.id, cities.name FROM `cities`  WHERE (LOWER(cities.name) LIKE '%na%')  ORDER BY cities.name ASC LIMIT 10[0m
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/offers/search" for 127.0.0.1 at 2014-11-05 11:44:22 +0100
+Processing by OffersController#search as JS
+  Parameters: {"utf8"=>"✓", "offer"=>{"departure"=>"paris", "destination"=>"nancy"}, "commit"=>"search "}
+  [1m[35mOffer Load (0.1ms)[0m  SELECT `offers`.* FROM `offers`  WHERE `offers`.`departure` = 'paris' AND `offers`.`destination` = 'nancy'
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1 LIMIT 1[0m
+  Rendered offers/_list.html.erb (26.3ms)
+  Rendered offers/search.js.erb (37.4ms)
+Completed 200 OK in 43ms (Views: 38.0ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-05 11:46:18 +0100
+Processing by OffersController#index as HTML
+  Rendered offers/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 189ms (Views: 186.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:46:18 +0100
+
+
+Started GET "/assets/jquery-ui.structure.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:46:18 +0100
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:46:18 +0100
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2014-11-05 11:46:18 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-11-05 11:46:18 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 11:46:18 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 11:46:18 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 11:46:18 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-05 11:46:18 +0100
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-11-05 11:46:18 +0100
+
+
+Started GET "/assets/offers.js?body=1" for 127.0.0.1 at 2014-11-05 11:46:18 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-11-05 11:46:18 +0100
+
+
+Started GET "/assets/autocomplete-rails.js?body=1" for 127.0.0.1 at 2014-11-05 11:46:18 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 11:46:18 +0100
+
+
+Started GET "/offers/autocomplete_city_name?term=pa" for 127.0.0.1 at 2014-11-05 11:46:20 +0100
+Processing by OffersController#autocomplete_city_name as JSON
+  Parameters: {"term"=>"pa"}
+  [1m[35mCity Load (0.2ms)[0m  SELECT  cities.id, cities.name FROM `cities`  WHERE (LOWER(cities.name) LIKE '%pa%')  ORDER BY cities.name ASC LIMIT 10
+Completed 500 Internal Server Error in 13ms
+
+ActiveModel::MissingAttributeError (missing attribute: country_id):
+  app/models/city.rb:6:in `auto_methode'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (16.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-05 11:47:16 +0100
+Processing by OffersController#index as HTML
+  Rendered offers/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 174ms (Views: 171.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:47:16 +0100
+
+
+Started GET "/assets/jquery-ui.structure.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:47:16 +0100
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:47:16 +0100
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2014-11-05 11:47:16 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 11:47:16 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-11-05 11:47:16 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 11:47:16 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 11:47:16 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-05 11:47:16 +0100
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-11-05 11:47:16 +0100
+
+
+Started GET "/assets/offers.js?body=1" for 127.0.0.1 at 2014-11-05 11:47:16 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-11-05 11:47:16 +0100
+
+
+Started GET "/assets/autocomplete-rails.js?body=1" for 127.0.0.1 at 2014-11-05 11:47:16 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 11:47:16 +0100
+
+
+Started GET "/offers/autocomplete_city_name?term=pa" for 127.0.0.1 at 2014-11-05 11:47:19 +0100
+Processing by OffersController#autocomplete_city_name as JSON
+  Parameters: {"term"=>"pa"}
+  [1m[36mCity Load (0.3ms)[0m  [1mSELECT  cities.id, cities.name FROM `cities`  WHERE (LOWER(cities.name) LIKE '%pa%')  ORDER BY cities.name ASC LIMIT 10[0m
+Completed 500 Internal Server Error in 14ms
+
+ActiveModel::MissingAttributeError (missing attribute: country_id):
+  app/models/city.rb:6:in `auto_methode'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (15.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-05 11:47:30 +0100
+Processing by OffersController#index as HTML
+  Rendered offers/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 185ms (Views: 183.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:47:30 +0100
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:47:30 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 11:47:30 +0100
+
+
+Started GET "/assets/jquery-ui.structure.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:47:30 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-11-05 11:47:30 +0100
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2014-11-05 11:47:30 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 11:47:30 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 11:47:31 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-05 11:47:31 +0100
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-11-05 11:47:31 +0100
+
+
+Started GET "/assets/offers.js?body=1" for 127.0.0.1 at 2014-11-05 11:47:31 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-11-05 11:47:31 +0100
+
+
+Started GET "/assets/autocomplete-rails.js?body=1" for 127.0.0.1 at 2014-11-05 11:47:31 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 11:47:31 +0100
+
+
+Started GET "/offers/autocomplete_city_name?term=pa" for 127.0.0.1 at 2014-11-05 11:47:33 +0100
+Processing by OffersController#autocomplete_city_name as JSON
+  Parameters: {"term"=>"pa"}
+  [1m[35mCity Load (0.3ms)[0m  SELECT  cities.id, cities.name FROM `cities`  WHERE (LOWER(cities.name) LIKE '%pa%')  ORDER BY cities.name ASC LIMIT 10
+Completed 500 Internal Server Error in 3ms
+
+ActiveModel::MissingAttributeError (missing attribute: country_id):
+  app/models/city.rb:6:in `auto_methode'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.9ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (18.0ms)
+
+
+Started GET "/offers/autocomplete_city_name?term=pari" for 127.0.0.1 at 2014-11-05 11:47:34 +0100
+Processing by OffersController#autocomplete_city_name as JSON
+  Parameters: {"term"=>"pari"}
+  [1m[36mCity Load (0.7ms)[0m  [1mSELECT  cities.id, cities.name FROM `cities`  WHERE (LOWER(cities.name) LIKE '%pari%')  ORDER BY cities.name ASC LIMIT 10[0m
+Completed 500 Internal Server Error in 2ms
+
+ActiveModel::MissingAttributeError (missing attribute: country_id):
+  app/models/city.rb:6:in `auto_methode'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (0.7ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.text.erb (0.9ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb (17.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-05 11:48:54 +0100
+Processing by OffersController#index as HTML
+  Rendered offers/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 183ms (Views: 180.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:48:55 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 11:48:55 +0100
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:48:55 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-11-05 11:48:55 +0100
+
+
+Started GET "/assets/jquery-ui.structure.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:48:55 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 11:48:55 +0100
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2014-11-05 11:48:55 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 11:48:55 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-05 11:48:55 +0100
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-11-05 11:48:55 +0100
+
+
+Started GET "/assets/offers.js?body=1" for 127.0.0.1 at 2014-11-05 11:48:55 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-11-05 11:48:55 +0100
+
+
+Started GET "/assets/autocomplete-rails.js?body=1" for 127.0.0.1 at 2014-11-05 11:48:55 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 11:48:55 +0100
+
+
+Started GET "/offers/autocomplete_city_name?term=pa" for 127.0.0.1 at 2014-11-05 11:48:58 +0100
+Processing by OffersController#autocomplete_city_name as JSON
+  Parameters: {"term"=>"pa"}
+  [1m[35mCity Load (0.5ms)[0m  SELECT  cities.id, cities.name, `cities`.`country_id` FROM `cities`  WHERE (LOWER(cities.name) LIKE '%pa%')  ORDER BY cities.name ASC LIMIT 10
+  [1m[36mCountry Load (0.5ms)[0m  [1mSELECT  `countries`.* FROM `countries`  WHERE `countries`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 27ms (Views: 0.4ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/offers/autocomplete_city_name?term=par" for 127.0.0.1 at 2014-11-05 11:49:05 +0100
+Processing by OffersController#autocomplete_city_name as JSON
+  Parameters: {"term"=>"par"}
+  [1m[35mCity Load (0.4ms)[0m  SELECT  cities.id, cities.name, `cities`.`country_id` FROM `cities`  WHERE (LOWER(cities.name) LIKE '%par%')  ORDER BY cities.name ASC LIMIT 10
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT  `countries`.* FROM `countries`  WHERE `countries`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/admin/city/new?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-05 11:49:10 +0100
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"city"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/_form_field.html.haml (0.4ms)
+  [1m[36mCountry Load (0.2ms)[0m  [1mSELECT `countries`.* FROM `countries`   ORDER BY countries.id desc[0m
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/_form_filtering_select.html.haml (6.9ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/_submit_buttons.html.haml (1.0ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/new.html.haml within layouts/rails_admin/pjax (17.6ms)
+Completed 200 OK in 53ms (Views: 27.3ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/admin/city/new" for 127.0.0.1 at 2014-11-05 11:49:19 +0100
+Processing by RailsAdmin::MainController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VuXWPxM0AzjAflLC6EAN9LmiVqy9RjyN/Yf2OgWIkWg=", "city"=>{"name"=>"paris", "country_id"=>"3"}, "return_to"=>"http://127.0.0.1:3000/admin/city", "_save"=>"", "model_name"=>"city"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO `cities` (`country_id`, `created_at`, `name`, `updated_at`) VALUES ('3', '2014-11-05 10:49:19', 'paris', '2014-11-05 10:49:19')
+  [1m[36m (150.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/admin/city
+Completed 302 Found in 161ms (ActiveRecord: 151.5ms)
+
+
+Started GET "/admin/city" for 127.0.0.1 at 2014-11-05 11:49:19 +0100
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"city"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCity Load (0.7ms)[0m  [1mSELECT  `cities`.* FROM `cities`   ORDER BY cities.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35mCountry Load (59.3ms)[0m  SELECT `countries`.* FROM `countries`  WHERE `countries`.`id` IN (3, 1)
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM `cities`[0m
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (102.6ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.6ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/layouts/rails_admin/pjax.html.haml (5.2ms)
+Completed 200 OK in 464ms (Views: 396.0ms | ActiveRecord: 60.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/rails_admin/jquery.remotipart.fixed.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/rails_admin/rails_admin.css?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/rails_admin/ra.i18n.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/assets/rails_admin/rails_admin.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:20 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-05 11:49:22 +0100
+Processing by OffersController#index as HTML
+  Rendered offers/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 163ms (Views: 161.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:49:22 +0100
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:49:22 +0100
+
+
+Started GET "/assets/jquery-ui.structure.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:49:22 +0100
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2014-11-05 11:49:22 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-11-05 11:49:22 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 11:49:22 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:22 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:22 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:22 +0100
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:22 +0100
+
+
+Started GET "/assets/offers.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:22 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:22 +0100
+
+
+Started GET "/assets/autocomplete-rails.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:22 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:22 +0100
+
+
+Started GET "/offers/autocomplete_city_name?term=pari" for 127.0.0.1 at 2014-11-05 11:49:25 +0100
+Processing by OffersController#autocomplete_city_name as JSON
+  Parameters: {"term"=>"pari"}
+  [1m[35mCity Load (0.8ms)[0m  SELECT  cities.id, cities.name, `cities`.`country_id` FROM `cities`  WHERE (LOWER(cities.name) LIKE '%pari%')  ORDER BY cities.name ASC LIMIT 10
+  [1m[36mCountry Load (0.3ms)[0m  [1mSELECT  `countries`.* FROM `countries`  WHERE `countries`.`id` = 1 LIMIT 1[0m
+  [1m[35mCountry Load (0.6ms)[0m  SELECT  `countries`.* FROM `countries`  WHERE `countries`.`id` = 3 LIMIT 1
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/city/4/delete?_pjax=%5Bdata-pjax-container%5D" for 127.0.0.1 at 2014-11-05 11:49:44 +0100
+Processing by RailsAdmin::MainController#delete as HTML
+  Parameters: {"_pjax"=>"[data-pjax-container]", "model_name"=>"city", "id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCity Load (0.5ms)[0m  SELECT  `cities`.* FROM `cities`  WHERE `cities`.`id` = 4  ORDER BY `cities`.`id` ASC LIMIT 1
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/_delete_notice.html.haml (4.2ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/delete.html.haml within layouts/rails_admin/pjax (603.2ms)
+Completed 200 OK in 1213ms (Views: 1202.8ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/admin/city/4/delete" for 127.0.0.1 at 2014-11-05 11:49:50 +0100
+Processing by RailsAdmin::MainController#delete as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VuXWPxM0AzjAflLC6EAN9LmiVqy9RjyN/Yf2OgWIkWg=", "return_to"=>"http://127.0.0.1:3000/admin/city", "model_name"=>"city", "id"=>"4"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35mCity Load (0.2ms)[0m  SELECT  `cities`.* FROM `cities`  WHERE `cities`.`id` = 4  ORDER BY `cities`.`id` ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.3ms)[0m  DELETE FROM `cities` WHERE `cities`.`id` = 4
+  [1m[36m (119.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/admin/city
+Completed 302 Found in 133ms (ActiveRecord: 121.7ms)
+
+
+Started GET "/admin/city" for 127.0.0.1 at 2014-11-05 11:49:50 +0100
+Processing by RailsAdmin::MainController#index as HTML
+  Parameters: {"model_name"=>"city"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  `users`.* FROM `users`  WHERE `users`.`id` = 1  ORDER BY `users`.`id` ASC LIMIT 1
+  [1m[36mCity Load (0.4ms)[0m  [1mSELECT  `cities`.* FROM `cities`   ORDER BY cities.id desc LIMIT 20 OFFSET 0[0m
+  [1m[35mCountry Load (0.2ms)[0m  SELECT `countries`.* FROM `countries`  WHERE `countries`.`id` IN (1)
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM `cities`[0m
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/rails_admin/main/index.html.haml within layouts/rails_admin/application (30.9ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/layouts/rails_admin/_secondary_navigation.html.haml (2.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views/layouts/rails_admin/pjax.html.haml (5.4ms)
+Completed 200 OK in 397ms (Views: 388.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/rails_admin/rails_admin.css?body=1" for 127.0.0.1 at 2014-11-05 11:49:50 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:50 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:50 +0100
+
+
+Started GET "/assets/jquery.ui.effect.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:50 +0100
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:50 +0100
+
+
+Started GET "/assets/rails_admin/jquery.remotipart.fixed.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:50 +0100
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:50 +0100
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:50 +0100
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/jquery.ui.menu.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/jquery.ui.autocomplete.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/rails_admin/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/rails_admin/ra.datetimepicker.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/rails_admin/jquery.colorpicker.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/rails_admin/ra.filter-box.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/rails_admin/ra.filtering-multiselect.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/rails_admin/ra.filtering-select.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/rails_admin/ra.remote-form.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/rails_admin/jquery.pjax.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/jquery_nested_form.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/rails_admin/ra.nested-form-hooks.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/rails_admin/ra.i18n.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/rails_admin/bootstrap/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/rails_admin/ra.widgets.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/rails_admin/ui.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/rails_admin/custom/ui.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/assets/rails_admin/rails_admin.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:51 +0100
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-05 11:49:53 +0100
+Processing by OffersController#index as HTML
+  Rendered offers/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 174ms (Views: 172.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-ui.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:49:53 +0100
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2014-11-05 11:49:53 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-11-05 11:49:53 +0100
+
+
+Started GET "/assets/jquery-ui.structure.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:49:53 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-05 11:49:53 +0100
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2014-11-05 11:49:53 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:54 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:54 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:54 +0100
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:54 +0100
+
+
+Started GET "/assets/offers.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:54 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:54 +0100
+
+
+Started GET "/assets/autocomplete-rails.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:54 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-05 11:49:54 +0100
+
+
+Started GET "/offers/autocomplete_city_name?term=paris" for 127.0.0.1 at 2014-11-05 11:49:56 +0100
+Processing by OffersController#autocomplete_city_name as JSON
+  Parameters: {"term"=>"paris"}
+  [1m[35mCity Load (0.8ms)[0m  SELECT  cities.id, cities.name, `cities`.`country_id` FROM `cities`  WHERE (LOWER(cities.name) LIKE '%paris%')  ORDER BY cities.name ASC LIMIT 10
+  [1m[36mCountry Load (0.2ms)[0m  [1mSELECT  `countries`.* FROM `countries`  WHERE `countries`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/offers/autocomplete_city_name?term=pa" for 127.0.0.1 at 2014-11-05 11:50:01 +0100
+Processing by OffersController#autocomplete_city_name as JSON
+  Parameters: {"term"=>"pa"}
+  [1m[35mCity Load (0.8ms)[0m  SELECT  cities.id, cities.name, `cities`.`country_id` FROM `cities`  WHERE (LOWER(cities.name) LIKE '%pa%')  ORDER BY cities.name ASC LIMIT 10
+  [1m[36mCountry Load (0.3ms)[0m  [1mSELECT  `countries`.* FROM `countries`  WHERE `countries`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/offers/autocomplete_city_name?term=pari" for 127.0.0.1 at 2014-11-05 11:54:37 +0100
+Processing by OffersController#autocomplete_city_name as JSON
+  Parameters: {"term"=>"pari"}
+  [1m[35mCity Load (0.7ms)[0m  SELECT  cities.id, cities.name, `cities`.`country_id` FROM `cities`  WHERE (LOWER(cities.name) LIKE '%pari%')  ORDER BY cities.name ASC LIMIT 10
+  [1m[36mCountry Load (0.3ms)[0m  [1mSELECT  `countries`.* FROM `countries`  WHERE `countries`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/offers/autocomplete_city_name?term=paris" for 127.0.0.1 at 2014-11-05 11:54:44 +0100
+Processing by OffersController#autocomplete_city_name as JSON
+  Parameters: {"term"=>"paris"}
+  [1m[35mCity Load (0.3ms)[0m  SELECT  cities.id, cities.name, `cities`.`country_id` FROM `cities`  WHERE (LOWER(cities.name) LIKE '%paris%')  ORDER BY cities.name ASC LIMIT 10
+  [1m[36mCountry Load (0.1ms)[0m  [1mSELECT  `countries`.* FROM `countries`  WHERE `countries`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/offers/search" for 127.0.0.1 at 2014-11-05 11:54:45 +0100
+Processing by OffersController#search as JS
+  Parameters: {"utf8"=>"✓", "offer"=>{"departure"=>"paris, france", "destination"=>""}, "commit"=>"search "}
+  [1m[35mOffer Load (0.5ms)[0m  SELECT `offers`.* FROM `offers`  WHERE `offers`.`departure` = 'paris, france' AND `offers`.`destination` = ''
+  Rendered offers/search.js.erb (35.6ms)
+Completed 200 OK in 45ms (Views: 10.3ms | ActiveRecord: 33.2ms)
+
+
+Started GET "/offers/autocomplete_city_name?term=nan" for 127.0.0.1 at 2014-11-05 11:54:50 +0100
+Processing by OffersController#autocomplete_city_name as JSON
+  Parameters: {"term"=>"nan"}
+  [1m[36mCity Load (0.8ms)[0m  [1mSELECT  cities.id, cities.name, `cities`.`country_id` FROM `cities`  WHERE (LOWER(cities.name) LIKE '%nan%')  ORDER BY cities.name ASC LIMIT 10[0m
+  [1m[35mCountry Load (0.2ms)[0m  SELECT  `countries`.* FROM `countries`  WHERE `countries`.`id` = 1 LIMIT 1
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/offers/search" for 127.0.0.1 at 2014-11-05 11:54:52 +0100
+Processing by OffersController#search as JS
+  Parameters: {"utf8"=>"✓", "offer"=>{"departure"=>"paris, france", "destination"=>"nancy, france"}, "commit"=>"search "}
+  [1m[36mOffer Load (0.5ms)[0m  [1mSELECT `offers`.* FROM `offers`  WHERE `offers`.`departure` = 'paris, france' AND `offers`.`destination` = 'nancy, france'[0m
+  Rendered offers/search.js.erb (1.0ms)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/offers/search" for 127.0.0.1 at 2014-11-05 11:54:54 +0100
+Processing by OffersController#search as JS
+  Parameters: {"utf8"=>"✓", "offer"=>{"departure"=>"paris, france", "destination"=>"nancy, france"}, "commit"=>"search "}
+  [1m[35mOffer Load (0.3ms)[0m  SELECT `offers`.* FROM `offers`  WHERE `offers`.`departure` = 'paris, france' AND `offers`.`destination` = 'nancy, france'
+  Rendered offers/search.js.erb (0.9ms)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/offers/search" for 127.0.0.1 at 2014-11-05 11:54:54 +0100
+Processing by OffersController#search as JS
+  Parameters: {"utf8"=>"✓", "offer"=>{"departure"=>"paris, france", "destination"=>"nancy, france"}, "commit"=>"search "}
+  [1m[36mOffer Load (0.2ms)[0m  [1mSELECT `offers`.* FROM `offers`  WHERE `offers`.`departure` = 'paris, france' AND `offers`.`destination` = 'nancy, france'[0m
+  Rendered offers/search.js.erb (0.8ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.2ms)

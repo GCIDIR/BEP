@@ -7,7 +7,7 @@ Rails.application.routes.draw do
       post 'search', to: 'offers#search' 
       get 'search', to: 'offers#search' 
     end
-    get :autocomplete_country_name, :on => :collection
+    get :autocomplete_city_name, :on => :collection
   end
   resources :orders
   root 'offers#index'

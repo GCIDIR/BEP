@@ -1,0 +1,26 @@
+<div class='list'>
+	<table>
+		<thead>
+			<th>user</th>
+			<th>depart</th>
+			<th>destination</th>
+			<th>poids min</th>
+			<th>poids max</th>
+			<th>prix</th>
+			<th>note</th>
+		</thead>
+		<tbody>
+		<% offers.each do |offer| %>
+			<tr>
+				<td><%= offer.user.email%></td>
+				<td><%= offer.departure %></td>
+				<td><%= offer.destination %></td>
+				<td><%= offer.min_weight_accepted %></td>
+				<td><%= offer.max_weight_accepted %></td>
+				<td><%= offer.price %></td>
+				<td><%= offer.user.marx %></td>
+			</tr>
+		<%end%>	
+		</tbody>
+	</table>
+</div>

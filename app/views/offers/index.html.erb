@@ -1,0 +1,9 @@
+<h1>offres</h1>
+<%= form_for(:offer, url: {controller: 'offers', action: 'search'}, remote: true) do |f|%>
+	<%= f.text_field :departure %>
+	<%= f.text_field :destination %>
+	<%= f.submit 'search ' %>
+<% end %>
+
+<div id="search_result">
+</div>

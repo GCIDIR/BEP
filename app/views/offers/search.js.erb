@@ -1,0 +1,6 @@
+<% unless @offers.blank? %>
+	$('#search_result').html("<%=j render 'list', offers: @offers %>")
+<% else %>
+	$('#search_result').empty();
+	$('#search_result').html('<p>No result</p>')
+<% end %>

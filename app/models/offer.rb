@@ -3,6 +3,11 @@ class Offer < ActiveRecord::Base
 
 
 	def self.search_by_departure_and_destination(depart, dest)
-		where(departure: depart, destination: dest)
+		depart_city = depart.split(',').first
+		depart_country = depart.split(',').last.strip
+
+		dest_city = dest.split(',').first
+		dest_country = dest.split(',').last.strip
+		where(departure: depart_city, destination: dest_city, departure_country: depart_country, destination_country: dest_country)
 	end
 end

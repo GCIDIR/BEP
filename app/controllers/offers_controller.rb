@@ -1,4 +1,5 @@
 class OffersController < ApplicationController
+	autocomplete :country, :name, :full => true
 
 	def index
 		@offers = Offer.all

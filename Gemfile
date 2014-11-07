@@ -48,3 +48,5 @@ gem 'rails_admin', '~> 0.6.3'
 gem 'devise', '~> 3.3.0'
 
 gem 'rails4-autocomplete'
+
+gem 'wisper'

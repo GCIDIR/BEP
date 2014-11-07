@@ -5,6 +5,17 @@ class OffersController < ApplicationController
 		@offers = Offer.all
 	end
 
+	def new 
+		@offer = Offer.new
+	end
+
+	def create
+		@offer = Offer.new(offer_params)
+		@offer.subscribe(OfferObserver.new)
+		@offer.on(:after_create) { |offer| redirect_to list_offers_offers_path }
+		@offer.save
+	end
+
 
 	def search
 		depart = params[:offer][:departure]
@@ -15,4 +26,19 @@ class OffersController < ApplicationController
 			format.js
 		end
 	end
+
+	def list_offers
+		@offers = Offer.all
+
+		respond_to do |format|
+			format.js
+		end
+	end
+
+	private 
+
+	def offer_params
+		 params.require(:offer).permit(:departure, :destination, :min_weight_accepted, :max_weight_accepted, :price, :departure_country, :destination_country, :user_id)
+	end
+
 end

@@ -1,4 +1,8 @@
 class Offer < ActiveRecord::Base
+	include Wisper::Publisher
+	after_create do
+    	broadcast(:after_create, self)
+  	end
 	belongs_to :user
 
 

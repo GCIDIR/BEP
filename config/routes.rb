@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     collection do
       post 'search', to: 'offers#search' 
       get 'search', to: 'offers#search' 
+      get 'list_offers', to: 'offers#list_offers'
     end
     get :autocomplete_city_name, :on => :collection
   end

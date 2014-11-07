@@ -24002,3 +24002,1753 @@ ActionController::UnknownFormat (ActionController::UnknownFormat):
   Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
   Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
   Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.8ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 12:04:33 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NhyXwPyj12lFsDG7dxmBejcZVptTf/vMWCXsJGoK2po=", "offer"=>{"departure"=>"sdd", "destination"=>"dssd"}, "commit"=>"Create Offer"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 11:04:33', 'sdd', 'dssd', '2014-11-07 11:04:33')[0m
+Redirected to http://127.0.0.1:3000/offers/list_offers
+  [1m[35m (206.2ms)[0m  COMMIT
+Completed 302 Found in 396ms (ActiveRecord: 354.7ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:04:34 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 1ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:33:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.6ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.3ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:04:52 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 1ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:31:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.6ms)
+
+
+Started GET "/offers/new" for 127.0.0.1 at 2014-11-07 12:04:56 +0100
+Processing by OffersController#new as HTML
+  Rendered offers/new.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 480ms (Views: 471.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-11-07 12:04:56 +0100
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-07 12:04:56 +0100
+
+
+Started GET "/assets/jquery-ui.min.css?body=1" for 127.0.0.1 at 2014-11-07 12:04:56 +0100
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2014-11-07 12:04:56 +0100
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2014-11-07 12:04:56 +0100
+
+
+Started GET "/assets/jquery-ui.structure.min.css?body=1" for 127.0.0.1 at 2014-11-07 12:04:56 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-11-07 12:04:56 +0100
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2014-11-07 12:04:56 +0100
+
+
+Started GET "/assets/style-1000px.css?body=1" for 127.0.0.1 at 2014-11-07 12:04:56 +0100
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2014-11-07 12:04:56 +0100
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2014-11-07 12:04:56 +0100
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-11-07 12:04:56 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-07 12:04:56 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-11-07 12:04:57 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-07 12:04:57 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-07 12:04:57 +0100
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-11-07 12:04:57 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-07 12:04:57 +0100
+
+
+Started GET "/assets/autocomplete-rails.js?body=1" for 127.0.0.1 at 2014-11-07 12:04:57 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-07 12:04:57 +0100
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2014-11-07 12:04:57 +0100
+
+
+Started GET "/assets/offers.js?body=1" for 127.0.0.1 at 2014-11-07 12:04:57 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-11-07 12:04:57 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-07 12:04:57 +0100
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2014-11-07 12:04:57 +0100
+
+
+Started GET "/assets/images/bg01.png" for 127.0.0.1 at 2014-11-07 12:04:57 +0100
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 12:04:58 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NhyXwPyj12lFsDG7dxmBejcZVptTf/vMWCXsJGoK2po=", "offer"=>{"departure"=>"sdd", "destination"=>"dssd"}, "commit"=>"Create Offer"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 11:04:58', 'sdd', 'dssd', '2014-11-07 11:04:58')
+Redirected to http://127.0.0.1:3000/offers/list_offers
+  [1m[36m (413.4ms)[0m  [1mCOMMIT[0m
+Completed 302 Found in 420ms (ActiveRecord: 413.9ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:04:59 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 1ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:31:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.7ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 12:05:28 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IT50PH8mUbEgzjb6ADiAQhK2UpnYZeNeE8muQYNZWIc=", "offer"=>{"departure"=>"ga", "destination"=>"ds"}, "commit"=>"Create Offer"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 11:05:28', 'ga', 'ds', '2014-11-07 11:05:28')[0m
+Redirected to http://127.0.0.1:3000/offers/list_offers
+  [1m[35m (228.3ms)[0m  COMMIT
+Completed 302 Found in 250ms (ActiveRecord: 231.8ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:05:28 +0100
+Processing by OffersController#list_offers as HTML
+  Rendered offers/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 318ms (Views: 317.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-11-07 12:05:28 +0100
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-07 12:05:28 +0100
+
+
+Started GET "/assets/jquery-ui.min.css?body=1" for 127.0.0.1 at 2014-11-07 12:05:28 +0100
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2014-11-07 12:05:28 +0100
+
+
+Started GET "/assets/jquery-ui.structure.min.css?body=1" for 127.0.0.1 at 2014-11-07 12:05:28 +0100
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2014-11-07 12:05:29 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-11-07 12:05:29 +0100
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2014-11-07 12:05:29 +0100
+
+
+Started GET "/assets/style-1000px.css?body=1" for 127.0.0.1 at 2014-11-07 12:05:29 +0100
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2014-11-07 12:05:29 +0100
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2014-11-07 12:05:29 +0100
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-11-07 12:05:29 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-07 12:05:29 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-11-07 12:05:29 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-07 12:05:29 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-07 12:05:29 +0100
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-11-07 12:05:29 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-07 12:05:29 +0100
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2014-11-07 12:05:29 +0100
+
+
+Started GET "/assets/autocomplete-rails.js?body=1" for 127.0.0.1 at 2014-11-07 12:05:29 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-07 12:05:29 +0100
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2014-11-07 12:05:29 +0100
+
+
+Started GET "/assets/offers.js?body=1" for 127.0.0.1 at 2014-11-07 12:05:29 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-11-07 12:05:29 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-07 12:05:29 +0100
+
+
+Started GET "/assets/images/bg01.png" for 127.0.0.1 at 2014-11-07 12:05:29 +0100
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 12:05:33 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IT50PH8mUbEgzjb6ADiAQhK2UpnYZeNeE8muQYNZWIc=", "offer"=>{"departure"=>"ga", "destination"=>"ds"}, "commit"=>"Create Offer"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (274.2ms)[0m  INSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 11:05:33', 'ga', 'ds', '2014-11-07 11:05:33')
+Redirected to http://127.0.0.1:3000/offers/list_offers
+  [1m[36m (177.0ms)[0m  [1mCOMMIT[0m
+Completed 302 Found in 458ms (ActiveRecord: 451.3ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:05:34 +0100
+Processing by OffersController#list_offers as HTML
+  Rendered offers/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 303ms (Views: 302.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-11-07 12:05:34 +0100
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-07 12:05:34 +0100
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2014-11-07 12:05:34 +0100
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2014-11-07 12:05:34 +0100
+
+
+Started GET "/assets/jquery-ui.structure.min.css?body=1" for 127.0.0.1 at 2014-11-07 12:05:34 +0100
+
+
+Started GET "/assets/jquery-ui.min.css?body=1" for 127.0.0.1 at 2014-11-07 12:05:34 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-11-07 12:05:34 +0100
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2014-11-07 12:05:34 +0100
+
+
+Started GET "/assets/style-1000px.css?body=1" for 127.0.0.1 at 2014-11-07 12:05:34 +0100
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2014-11-07 12:05:34 +0100
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2014-11-07 12:05:34 +0100
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-11-07 12:05:34 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-07 12:05:34 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-11-07 12:05:34 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-07 12:05:34 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-07 12:05:34 +0100
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-11-07 12:05:34 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-07 12:05:34 +0100
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2014-11-07 12:05:34 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-07 12:05:34 +0100
+
+
+Started GET "/assets/autocomplete-rails.js?body=1" for 127.0.0.1 at 2014-11-07 12:05:34 +0100
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2014-11-07 12:05:34 +0100
+
+
+Started GET "/assets/offers.js?body=1" for 127.0.0.1 at 2014-11-07 12:05:34 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-11-07 12:05:34 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-07 12:05:34 +0100
+
+
+Started GET "/assets/images/bg01.png" for 127.0.0.1 at 2014-11-07 12:05:34 +0100
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:05:46 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 3ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:33:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.0ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:05:48 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 1ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:33:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.6ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:05:48 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 1ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:33:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.6ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:05:48 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 1ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:33:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.5ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:05:48 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 1ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:33:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.9ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:05:56 +0100
+Processing by OffersController#list_offers as HTML
+Completed 500 Internal Server Error in 3ms
+
+NoMethodError (To respond to a custom format, register it as a MIME type first: http://guides.rubyonrails.org/action_controller_overview.html#restful-downloads. If you meant to respond to a variant like :tablet or :phone, not a custom format, be sure to nest your variant response within a format response: format.html { |html| html.tablet { ... } }):
+  app/controllers/offers_controller.rb:34:in `block in list_offers'
+  app/controllers/offers_controller.rb:33:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.3ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:05:58 +0100
+Processing by OffersController#list_offers as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (To respond to a custom format, register it as a MIME type first: http://guides.rubyonrails.org/action_controller_overview.html#restful-downloads. If you meant to respond to a variant like :tablet or :phone, not a custom format, be sure to nest your variant response within a format response: format.html { |html| html.tablet { ... } }):
+  app/controllers/offers_controller.rb:34:in `block in list_offers'
+  app/controllers/offers_controller.rb:33:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.3ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:06:09 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 3ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:33:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.1ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:06:10 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 1ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:33:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.6ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:06:10 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 2ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:33:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.5ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:06:10 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 1ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:33:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.5ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.3ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:06:11 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 2ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:33:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.6ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:06:11 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 1ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:33:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.3ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:06:11 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 2ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:33:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.3ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.0ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:06:27 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 2ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:33:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.8ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:06:28 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 2ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:33:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.5ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:06:28 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 1ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:33:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.3ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:06:37 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 1ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:33:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.6ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 12:06:40 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IT50PH8mUbEgzjb6ADiAQhK2UpnYZeNeE8muQYNZWIc=", "offer"=>{"departure"=>"ga", "destination"=>"ds"}, "commit"=>"Create Offer"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 11:06:40', 'ga', 'ds', '2014-11-07 11:06:40')[0m
+Redirected to http://127.0.0.1:3000/offers/list_offers
+  [1m[35m (280.2ms)[0m  COMMIT
+Completed 302 Found in 298ms (ActiveRecord: 283.0ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:06:40 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 1ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:33:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.0ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:06:53 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 1ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:33:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.8ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.2ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:06:55 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 2ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:33:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.4ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 12:07:24 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IT50PH8mUbEgzjb6ADiAQhK2UpnYZeNeE8muQYNZWIc=", "offer"=>{"departure"=>"ga", "destination"=>"ds"}, "commit"=>"Create Offer"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 11:07:24', 'ga', 'ds', '2014-11-07 11:07:24')
+Redirected to http://127.0.0.1:3000/offers/list_offers
+  [1m[36m (223.2ms)[0m  [1mCOMMIT[0m
+Completed 302 Found in 228ms (ActiveRecord: 223.7ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:07:24 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 1ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:33:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.5ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 12:09:38 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IT50PH8mUbEgzjb6ADiAQhK2UpnYZeNeE8muQYNZWIc=", "offer"=>{"departure"=>"ga", "destination"=>"ds"}, "commit"=>"Create Offer"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 11:09:39', 'ga', 'ds', '2014-11-07 11:09:39')[0m
+  [1m[35m (340.1ms)[0m  COMMIT
+Completed 200 OK in 365ms (Views: 0.1ms | ActiveRecord: 341.8ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 12:09:54 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IT50PH8mUbEgzjb6ADiAQhK2UpnYZeNeE8muQYNZWIc=", "offer"=>{"departure"=>"ga", "destination"=>"ds"}, "commit"=>"Create Offer"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 11:09:54', 'ga', 'ds', '2014-11-07 11:09:54')
+  [1m[36m (366.7ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 371ms (Views: 0.1ms | ActiveRecord: 367.1ms)
+
+
+Started GET "/offers/new" for 127.0.0.1 at 2014-11-07 12:09:58 +0100
+Processing by OffersController#new as HTML
+  Rendered offers/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 330ms (Views: 329.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-11-07 12:09:58 +0100
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-07 12:09:58 +0100
+
+
+Started GET "/assets/jquery-ui.structure.min.css?body=1" for 127.0.0.1 at 2014-11-07 12:09:58 +0100
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2014-11-07 12:09:58 +0100
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2014-11-07 12:09:58 +0100
+
+
+Started GET "/assets/jquery-ui.min.css?body=1" for 127.0.0.1 at 2014-11-07 12:09:58 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-11-07 12:09:58 +0100
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2014-11-07 12:09:58 +0100
+
+
+Started GET "/assets/style-1000px.css?body=1" for 127.0.0.1 at 2014-11-07 12:09:58 +0100
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2014-11-07 12:09:58 +0100
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2014-11-07 12:09:58 +0100
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-11-07 12:09:58 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-07 12:09:58 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-11-07 12:09:58 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-07 12:09:58 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-07 12:09:58 +0100
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-11-07 12:09:58 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-07 12:09:58 +0100
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2014-11-07 12:09:58 +0100
+
+
+Started GET "/assets/autocomplete-rails.js?body=1" for 127.0.0.1 at 2014-11-07 12:09:58 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-07 12:09:58 +0100
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2014-11-07 12:09:58 +0100
+
+
+Started GET "/assets/offers.js?body=1" for 127.0.0.1 at 2014-11-07 12:09:58 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-11-07 12:09:58 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-07 12:09:58 +0100
+
+
+Started GET "/assets/images/bg01.png" for 127.0.0.1 at 2014-11-07 12:09:58 +0100
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 12:10:01 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IT50PH8mUbEgzjb6ADiAQhK2UpnYZeNeE8muQYNZWIc=", "offer"=>{"departure"=>"ss", "destination"=>"ss"}, "commit"=>"Create Offer"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 11:10:01', 'ss', 'ss', '2014-11-07 11:10:01')[0m
+  [1m[35m (182.9ms)[0m  COMMIT
+Completed 200 OK in 188ms (Views: 0.1ms | ActiveRecord: 183.3ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 12:10:12 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IT50PH8mUbEgzjb6ADiAQhK2UpnYZeNeE8muQYNZWIc=", "offer"=>{"departure"=>"ss", "destination"=>"ss"}, "commit"=>"Create Offer"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 11:10:12', 'ss', 'ss', '2014-11-07 11:10:12')
+  [1m[36m (251.3ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 269ms (Views: 0.1ms | ActiveRecord: 253.1ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 12:10:24 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IT50PH8mUbEgzjb6ADiAQhK2UpnYZeNeE8muQYNZWIc=", "offer"=>{"departure"=>"ss", "destination"=>"ss"}, "commit"=>"Create Offer"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 11:10:24', 'ss', 'ss', '2014-11-07 11:10:24')[0m
+  [1m[35m (265.6ms)[0m  COMMIT
+Completed 200 OK in 270ms (Views: 0.1ms | ActiveRecord: 266.0ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 12:10:54 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IT50PH8mUbEgzjb6ADiAQhK2UpnYZeNeE8muQYNZWIc=", "offer"=>{"departure"=>"ss", "destination"=>"ss"}, "commit"=>"Create Offer"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 11:10:54', 'ss', 'ss', '2014-11-07 11:10:54')
+  [1m[36m (182.7ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 211ms
+
+ActionView::MissingTemplate (Missing template offers/list_offers, application/list_offers with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder, :haml]}. Searched in:
+  * "/home/gaci/Documents/BEP/app/views"
+  * "/home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/devise-3.3.0/app/views"
+  * "/home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views"
+  * "/home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/kaminari-0.16.1/app/views"
+):
+  app/controllers/offers_controller.rb:15:in `block in create'
+  app/models/offer.rb:4:in `block in <class:Offer>'
+  app/controllers/offers_controller.rb:16:in `create'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.6ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 12:11:29 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IT50PH8mUbEgzjb6ADiAQhK2UpnYZeNeE8muQYNZWIc=", "offer"=>{"departure"=>"ss", "destination"=>"ss"}, "commit"=>"Create Offer"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 11:11:29', 'ss', 'ss', '2014-11-07 11:11:29')[0m
+  [1m[35m (294.0ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 327ms
+
+ActionView::MissingTemplate (Missing template offers/list_offers, application/list_offers with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder, :haml]}. Searched in:
+  * "/home/gaci/Documents/BEP/app/views"
+  * "/home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/devise-3.3.0/app/views"
+  * "/home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views"
+  * "/home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/kaminari-0.16.1/app/views"
+):
+  app/controllers/offers_controller.rb:15:in `block in create'
+  app/models/offer.rb:4:in `block in <class:Offer>'
+  app/controllers/offers_controller.rb:16:in `create'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.6ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 12:11:57 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IT50PH8mUbEgzjb6ADiAQhK2UpnYZeNeE8muQYNZWIc=", "offer"=>{"departure"=>"ss", "destination"=>"ss"}, "commit"=>"Create Offer"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 11:11:57', 'ss', 'ss', '2014-11-07 11:11:57')
+Redirected to http://127.0.0.1:3000/offers/list_offers
+  [1m[36m (156.1ms)[0m  [1mCOMMIT[0m
+Completed 302 Found in 178ms (ActiveRecord: 159.8ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:11:58 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 1ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:33:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.2ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 12:12:35 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IT50PH8mUbEgzjb6ADiAQhK2UpnYZeNeE8muQYNZWIc=", "offer"=>{"departure"=>"ss", "destination"=>"ss"}, "commit"=>"Create Offer"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 11:12:35', 'ss', 'ss', '2014-11-07 11:12:35')[0m
+Redirected to http://127.0.0.1:3000/offers/list_offers
+  [1m[35m (272.8ms)[0m  COMMIT
+Completed 302 Found in 291ms (ActiveRecord: 274.8ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:12:36 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 2ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:33:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.1ms)
+
+
+Started GET "/offers/new" for 127.0.0.1 at 2014-11-07 12:12:46 +0100
+Processing by OffersController#new as HTML
+  Rendered offers/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 332ms (Views: 330.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-11-07 12:12:46 +0100
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-07 12:12:46 +0100
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2014-11-07 12:12:46 +0100
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2014-11-07 12:12:46 +0100
+
+
+Started GET "/assets/jquery-ui.structure.min.css?body=1" for 127.0.0.1 at 2014-11-07 12:12:46 +0100
+
+
+Started GET "/assets/jquery-ui.min.css?body=1" for 127.0.0.1 at 2014-11-07 12:12:46 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-11-07 12:12:46 +0100
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2014-11-07 12:12:46 +0100
+
+
+Started GET "/assets/style-1000px.css?body=1" for 127.0.0.1 at 2014-11-07 12:12:46 +0100
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2014-11-07 12:12:46 +0100
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2014-11-07 12:12:47 +0100
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-11-07 12:12:47 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-07 12:12:47 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-11-07 12:12:47 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-07 12:12:47 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-07 12:12:47 +0100
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-11-07 12:12:47 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-07 12:12:47 +0100
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2014-11-07 12:12:47 +0100
+
+
+Started GET "/assets/autocomplete-rails.js?body=1" for 127.0.0.1 at 2014-11-07 12:12:47 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-07 12:12:47 +0100
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2014-11-07 12:12:47 +0100
+
+
+Started GET "/assets/offers.js?body=1" for 127.0.0.1 at 2014-11-07 12:12:47 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-11-07 12:12:47 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-07 12:12:47 +0100
+
+
+Started GET "/assets/images/bg01.png" for 127.0.0.1 at 2014-11-07 12:12:47 +0100
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 12:12:50 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IT50PH8mUbEgzjb6ADiAQhK2UpnYZeNeE8muQYNZWIc=", "offer"=>{"departure"=>"qq", "destination"=>"qq"}, "commit"=>"Create Offer"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 11:12:50', 'qq', 'qq', '2014-11-07 11:12:50')
+Redirected to http://127.0.0.1:3000/offers/list_offers
+  [1m[36m (187.8ms)[0m  [1mCOMMIT[0m
+Completed 302 Found in 192ms (ActiveRecord: 188.2ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:12:50 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 1ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:33:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.9ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 12:16:33 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IT50PH8mUbEgzjb6ADiAQhK2UpnYZeNeE8muQYNZWIc=", "offer"=>{"departure"=>"qq", "destination"=>"qq"}, "commit"=>"Create Offer"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 11:16:33', 'qq', 'qq', '2014-11-07 11:16:33')[0m
+  [1m[35m (445.5ms)[0m  COMMIT
+Completed 200 OK in 465ms (Views: 0.1ms | ActiveRecord: 448.1ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 12:16:56 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IT50PH8mUbEgzjb6ADiAQhK2UpnYZeNeE8muQYNZWIc=", "offer"=>{"departure"=>"qq", "destination"=>"qq"}, "commit"=>"Create Offer"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 11:16:56', 'qq', 'qq', '2014-11-07 11:16:56')
+  [1m[36m (159.1ms)[0m  [1mCOMMIT[0m
+Completed 200 OK in 184ms (Views: 0.1ms | ActiveRecord: 162.5ms)
+
+
+Started GET "/offers/new" for 127.0.0.1 at 2014-11-07 12:17:17 +0100
+Processing by OffersController#new as HTML
+  Rendered offers/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 619ms (Views: 609.9ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-11-07 12:17:18 +0100
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-07 12:17:18 +0100
+
+
+Started GET "/assets/jquery-ui.structure.min.css?body=1" for 127.0.0.1 at 2014-11-07 12:17:18 +0100
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2014-11-07 12:17:18 +0100
+
+
+Started GET "/assets/jquery-ui.min.css?body=1" for 127.0.0.1 at 2014-11-07 12:17:18 +0100
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2014-11-07 12:17:18 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-11-07 12:17:18 +0100
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2014-11-07 12:17:18 +0100
+
+
+Started GET "/assets/style-1000px.css?body=1" for 127.0.0.1 at 2014-11-07 12:17:18 +0100
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2014-11-07 12:17:18 +0100
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2014-11-07 12:17:18 +0100
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-11-07 12:17:18 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-07 12:17:18 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-11-07 12:17:18 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-07 12:17:18 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-07 12:17:18 +0100
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-11-07 12:17:18 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-07 12:17:18 +0100
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2014-11-07 12:17:18 +0100
+
+
+Started GET "/assets/autocomplete-rails.js?body=1" for 127.0.0.1 at 2014-11-07 12:17:18 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-07 12:17:18 +0100
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2014-11-07 12:17:18 +0100
+
+
+Started GET "/assets/offers.js?body=1" for 127.0.0.1 at 2014-11-07 12:17:18 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-11-07 12:17:18 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-07 12:17:18 +0100
+
+
+Started GET "/assets/images/bg01.png" for 127.0.0.1 at 2014-11-07 12:17:18 +0100
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 12:17:21 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IT50PH8mUbEgzjb6ADiAQhK2UpnYZeNeE8muQYNZWIc=", "offer"=>{"departure"=>"qq", "destination"=>"qq"}, "commit"=>"Create Offer"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 11:17:21', 'qq', 'qq', '2014-11-07 11:17:21')[0m
+Redirected to http://127.0.0.1:3000/offers/list_offers
+  [1m[35m (178.9ms)[0m  COMMIT
+Completed 302 Found in 184ms (ActiveRecord: 179.3ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:17:21 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 1ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:33:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.6ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 12:18:21 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IT50PH8mUbEgzjb6ADiAQhK2UpnYZeNeE8muQYNZWIc=", "offer"=>{"departure"=>"qq", "destination"=>"qq"}, "commit"=>"Create Offer"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 11:18:21', 'qq', 'qq', '2014-11-07 11:18:21')
+Redirected to http://127.0.0.1:3000/offers/list_offers
+  [1m[36m (513.8ms)[0m  [1mCOMMIT[0m
+Completed 302 Found in 533ms (ActiveRecord: 515.5ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:18:22 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 2ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:33:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.4ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 12:22:32 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IT50PH8mUbEgzjb6ADiAQhK2UpnYZeNeE8muQYNZWIc=", "offer"=>{"departure"=>"qq", "destination"=>"qq"}, "commit"=>"Create Offer"}
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 11:22:32', 'qq', 'qq', '2014-11-07 11:22:32')[0m
+Redirected to http://127.0.0.1:3000/offers/list_offers
+  [1m[35m (364.1ms)[0m  COMMIT
+Completed 302 Found in 373ms (ActiveRecord: 365.1ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:22:33 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 1ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:33:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.5ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 12:24:57 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IT50PH8mUbEgzjb6ADiAQhK2UpnYZeNeE8muQYNZWIc=", "offer"=>{"departure"=>"qq", "destination"=>"qq"}, "commit"=>"Create Offer"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 11:24:57', 'qq', 'qq', '2014-11-07 11:24:57')
+Redirected to http://127.0.0.1:3000/offers/list_offers
+  [1m[36m (155.9ms)[0m  [1mCOMMIT[0m
+Completed 302 Found in 201ms (ActiveRecord: 174.8ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:24:57 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 1ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:33:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.5ms)
+
+
+Started GET "/offers/new" for 127.0.0.1 at 2014-11-07 12:25:00 +0100
+Processing by OffersController#new as HTML
+  Rendered offers/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 403ms (Views: 401.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-11-07 12:25:01 +0100
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-11-07 12:25:01 +0100
+
+
+Started GET "/assets/offers.css?body=1" for 127.0.0.1 at 2014-11-07 12:25:01 +0100
+
+
+Started GET "/assets/jquery-ui.min.css?body=1" for 127.0.0.1 at 2014-11-07 12:25:01 +0100
+
+
+Started GET "/assets/jquery-ui.structure.min.css?body=1" for 127.0.0.1 at 2014-11-07 12:25:01 +0100
+
+
+Started GET "/assets/jquery-ui.theme.min.css?body=1" for 127.0.0.1 at 2014-11-07 12:25:01 +0100
+
+
+Started GET "/assets/skel.css?body=1" for 127.0.0.1 at 2014-11-07 12:25:01 +0100
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2014-11-07 12:25:01 +0100
+
+
+Started GET "/assets/style-1000px.css?body=1" for 127.0.0.1 at 2014-11-07 12:25:01 +0100
+
+
+Started GET "/assets/style-desktop.css?body=1" for 127.0.0.1 at 2014-11-07 12:25:01 +0100
+
+
+Started GET "/assets/style-mobile.css?body=1" for 127.0.0.1 at 2014-11-07 12:25:01 +0100
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2014-11-07 12:25:01 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-11-07 12:25:01 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-07 12:25:01 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-07 12:25:01 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-07 12:25:01 +0100
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-11-07 12:25:01 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-07 12:25:01 +0100
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2014-11-07 12:25:01 +0100
+
+
+Started GET "/assets/autocomplete-rails.js?body=1" for 127.0.0.1 at 2014-11-07 12:25:01 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-11-07 12:25:01 +0100
+
+
+Started GET "/assets/jquery.min.js?body=1" for 127.0.0.1 at 2014-11-07 12:25:01 +0100
+
+
+Started GET "/assets/offers.js?body=1" for 127.0.0.1 at 2014-11-07 12:25:01 +0100
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2014-11-07 12:25:01 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-07 12:25:01 +0100
+
+
+Started GET "/assets/images/bg01.png" for 127.0.0.1 at 2014-11-07 12:25:01 +0100
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 12:25:02 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IT50PH8mUbEgzjb6ADiAQhK2UpnYZeNeE8muQYNZWIc=", "offer"=>{"departure"=>"", "destination"=>""}, "commit"=>"Create Offer"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 11:25:02', '', '', '2014-11-07 11:25:02')[0m
+Redirected to http://127.0.0.1:3000/offers/list_offers
+  [1m[35m (142.6ms)[0m  COMMIT
+Completed 302 Found in 148ms (ActiveRecord: 143.0ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:25:02 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 1ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:33:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.9ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 12:31:20 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IT50PH8mUbEgzjb6ADiAQhK2UpnYZeNeE8muQYNZWIc=", "offer"=>{"departure"=>"qq", "destination"=>"qq"}, "commit"=>"Create Offer"}
+  [1m[36m (0.5ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 11:31:20', 'qq', 'qq', '2014-11-07 11:31:20')
+Redirected to http://127.0.0.1:3000/offers/list_offers
+  [1m[36m (189.7ms)[0m  [1mROLLBACK[0m
+Completed 500 Internal Server Error in 214ms
+
+ArgumentError (wrong number of arguments (2 for 1)):
+  app/controllers/offers_controller.rb:17:in `block (2 levels) in create'
+  app/controllers/offers_controller.rb:16:in `block in create'
+  app/models/offer.rb:4:in `block in <class:Offer>'
+  app/controllers/offers_controller.rb:19:in `create'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.2ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 12:32:11 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IT50PH8mUbEgzjb6ADiAQhK2UpnYZeNeE8muQYNZWIc=", "offer"=>{"departure"=>"qq", "destination"=>"qq"}, "commit"=>"Create Offer"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 11:32:11', 'qq', 'qq', '2014-11-07 11:32:11')[0m
+  [1m[35m (237.1ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 259ms
+
+NameError (undefined local variable or method `rmat' for #<OffersController:0x0000000416d970>):
+  app/controllers/offers_controller.rb:17:in `block (2 levels) in create'
+  app/controllers/offers_controller.rb:16:in `block in create'
+  app/models/offer.rb:4:in `block in <class:Offer>'
+  app/controllers/offers_controller.rb:20:in `create'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.9ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 12:32:19 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IT50PH8mUbEgzjb6ADiAQhK2UpnYZeNeE8muQYNZWIc=", "offer"=>{"departure"=>"qq", "destination"=>"qq"}, "commit"=>"Create Offer"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 11:32:19', 'qq', 'qq', '2014-11-07 11:32:19')
+  [1m[36m (137.5ms)[0m  [1mROLLBACK[0m
+Completed 406 Not Acceptable in 158ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:16:in `block in create'
+  app/models/offer.rb:4:in `block in <class:Offer>'
+  app/controllers/offers_controller.rb:20:in `create'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.8ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 12:36:21 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IT50PH8mUbEgzjb6ADiAQhK2UpnYZeNeE8muQYNZWIc=", "offer"=>{"departure"=>"qq", "destination"=>"qq"}, "commit"=>"Create Offer"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 11:36:22', 'qq', 'qq', '2014-11-07 11:36:22')[0m
+  [1m[35m (258.7ms)[0m  ROLLBACK
+Completed 500 Internal Server Error in 277ms
+
+ArgumentError (too few arguments):
+  app/controllers/offers_controller.rb:16:in `format'
+  app/controllers/offers_controller.rb:16:in `block in create'
+  app/models/offer.rb:4:in `block in <class:Offer>'
+  app/controllers/offers_controller.rb:18:in `create'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.2ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 12:36:38 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IT50PH8mUbEgzjb6ADiAQhK2UpnYZeNeE8muQYNZWIc=", "offer"=>{"departure"=>"qq", "destination"=>"qq"}, "commit"=>"Create Offer"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 11:36:38', 'qq', 'qq', '2014-11-07 11:36:38')
+Redirected to http://127.0.0.1:3000/offers/list_offers
+  [1m[36m (256.0ms)[0m  [1mCOMMIT[0m
+Completed 302 Found in 282ms (ActiveRecord: 259.7ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:36:39 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 1ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:35:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.4ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:36:57 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 1ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:35:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.1ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:36:58 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 1ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:35:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.3ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:36:58 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 1ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:35:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.4ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:36:59 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 2ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:35:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.1ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 12:36:59 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 4ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:35:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.3ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 14:04:23 +0100
+
+SyntaxError (/home/gaci/Documents/BEP/app/controllers/offers_controller.rb:28: syntax error, unexpected ':', expecting '}'
+			format.js{ status: 200}
+			                  ^):
+  app/controllers/offers_controller.rb:28: syntax error, unexpected ':', expecting '}'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.0ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 14:04:41 +0100
+
+SyntaxError (/home/gaci/Documents/BEP/app/controllers/offers_controller.rb:28: syntax error, unexpected ':', expecting '}'
+			format.js{ status: '200'}
+			                  ^):
+  app/controllers/offers_controller.rb:28: syntax error, unexpected ':', expecting '}'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.8ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 14:04:55 +0100
+
+SyntaxError (/home/gaci/Documents/BEP/app/controllers/offers_controller.rb:28: syntax error, unexpected ':', expecting '}'
+			format.js { status: '200'}
+			                   ^):
+  app/controllers/offers_controller.rb:28: syntax error, unexpected ':', expecting '}'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.5ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 14:05:19 +0100
+
+SyntaxError (/home/gaci/Documents/BEP/app/controllers/offers_controller.rb:28: syntax error, unexpected ':', expecting '}'
+			format.js { status: :success}
+			                   ^):
+  app/controllers/offers_controller.rb:28: syntax error, unexpected ':', expecting '}'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.1ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 14:05:31 +0100
+
+SyntaxError (/home/gaci/Documents/BEP/app/controllers/offers_controller.rb:28: syntax error, unexpected ':', expecting '}'
+			format.js { status: :success }
+			                   ^):
+  app/controllers/offers_controller.rb:28: syntax error, unexpected ':', expecting '}'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.2ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 14:05:46 +0100
+
+SyntaxError (/home/gaci/Documents/BEP/app/controllers/offers_controller.rb:28: syntax error, unexpected =>, expecting '}'
+			format.js { :status=>:success }
+			                     ^):
+  app/controllers/offers_controller.rb:28: syntax error, unexpected =>, expecting '}'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.4ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 14:05:49 +0100
+
+SyntaxError (/home/gaci/Documents/BEP/app/controllers/offers_controller.rb:28: syntax error, unexpected =>, expecting '}'
+			format.js { :status=>:success }
+			                     ^):
+  app/controllers/offers_controller.rb:28: syntax error, unexpected =>, expecting '}'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.8ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 14:05:58 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IT50PH8mUbEgzjb6ADiAQhK2UpnYZeNeE8muQYNZWIc=", "offer"=>{"departure"=>"qq", "destination"=>"qq"}, "commit"=>"Create Offer"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 13:05:59', 'qq', 'qq', '2014-11-07 13:05:59')[0m
+Redirected to http://127.0.0.1:3000/offers/list_offers
+  [1m[35m (195.5ms)[0m  COMMIT
+Completed 302 Found in 305ms (ActiveRecord: 282.9ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 14:05:59 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 1ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:35:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (29.2ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 14:43:36 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IT50PH8mUbEgzjb6ADiAQhK2UpnYZeNeE8muQYNZWIc=", "offer"=>{"departure"=>"qq", "destination"=>"qq"}, "commit"=>"Create Offer"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 13:43:37', 'qq', 'qq', '2014-11-07 13:43:37')
+Redirected to http://127.0.0.1:3000/offers/list_offers
+  [1m[36m (246.8ms)[0m  [1mCOMMIT[0m
+Completed 302 Found in 266ms (ActiveRecord: 250.9ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 14:43:37 +0100
+Processing by OffersController#list_offers as HTML
+Completed 406 Not Acceptable in 1ms
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/offers_controller.rb:35:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.6ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 14:43:57 +0100
+Processing by OffersController#list_offers as HTML
+Completed 500 Internal Server Error in 9ms
+
+ActionView::MissingTemplate (Missing template offers/list_offers, application/list_offers with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder, :haml]}. Searched in:
+  * "/home/gaci/Documents/BEP/app/views"
+  * "/home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/devise-3.3.0/app/views"
+  * "/home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views"
+  * "/home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/kaminari-0.16.1/app/views"
+):
+  app/controllers/offers_controller.rb:35:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (1.4ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 14:43:59 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IT50PH8mUbEgzjb6ADiAQhK2UpnYZeNeE8muQYNZWIc=", "offer"=>{"departure"=>"qq", "destination"=>"qq"}, "commit"=>"Create Offer"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 13:43:59', 'qq', 'qq', '2014-11-07 13:43:59')[0m
+Redirected to http://127.0.0.1:3000/offers/list_offers
+  [1m[35m (242.0ms)[0m  COMMIT
+Completed 302 Found in 259ms (ActiveRecord: 245.4ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 14:43:59 +0100
+Processing by OffersController#list_offers as HTML
+Completed 500 Internal Server Error in 4ms
+
+ActionView::MissingTemplate (Missing template offers/list_offers, application/list_offers with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder, :haml]}. Searched in:
+  * "/home/gaci/Documents/BEP/app/views"
+  * "/home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/devise-3.3.0/app/views"
+  * "/home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views"
+  * "/home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/kaminari-0.16.1/app/views"
+):
+  app/controllers/offers_controller.rb:35:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.6ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 14:44:11 +0100
+Processing by OffersController#list_offers as HTML
+Completed 500 Internal Server Error in 6ms
+
+ActionView::MissingTemplate (Missing template offers/list_offers, application/list_offers with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder, :haml]}. Searched in:
+  * "/home/gaci/Documents/BEP/app/views"
+  * "/home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/devise-3.3.0/app/views"
+  * "/home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views"
+  * "/home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/kaminari-0.16.1/app/views"
+):
+  app/controllers/offers_controller.rb:35:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.5ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 14:44:23 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IT50PH8mUbEgzjb6ADiAQhK2UpnYZeNeE8muQYNZWIc=", "offer"=>{"departure"=>"qq", "destination"=>"qq"}, "commit"=>"Create Offer"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 13:44:23', 'qq', 'qq', '2014-11-07 13:44:23')
+Redirected to http://127.0.0.1:3000/offers/list_offers
+  [1m[36m (238.9ms)[0m  [1mCOMMIT[0m
+Completed 302 Found in 259ms (ActiveRecord: 243.2ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 14:44:23 +0100
+Processing by OffersController#list_offers as HTML
+Completed 500 Internal Server Error in 5ms
+
+ActionView::MissingTemplate (Missing template offers/list_offers, application/list_offers with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder, :haml]}. Searched in:
+  * "/home/gaci/Documents/BEP/app/views"
+  * "/home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/devise-3.3.0/app/views"
+  * "/home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views"
+  * "/home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/kaminari-0.16.1/app/views"
+):
+  app/controllers/offers_controller.rb:35:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.8ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 15:17:58 +0100
+Processing by OffersController#list_offers as HTML
+Completed 500 Internal Server Error in 32ms
+
+ActionView::MissingTemplate (Missing template offers/list_offers, application/list_offers with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder, :haml]}. Searched in:
+  * "/home/gaci/Documents/BEP/app/views"
+  * "/home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/devise-3.3.0/app/views"
+  * "/home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views"
+  * "/home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/kaminari-0.16.1/app/views"
+):
+  app/controllers/offers_controller.rb:35:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (1.1ms)
+
+
+Started POST "/offers" for 127.0.0.1 at 2014-11-07 15:18:10 +0100
+Processing by OffersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NhyXwPyj12lFsDG7dxmBejcZVptTf/vMWCXsJGoK2po=", "offer"=>{"departure"=>"sdd", "destination"=>"dssd"}, "commit"=>"Create Offer"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (643.4ms)[0m  [1mINSERT INTO `offers` (`created_at`, `departure`, `destination`, `updated_at`) VALUES ('2014-11-07 14:18:11', 'sdd', 'dssd', '2014-11-07 14:18:11')[0m
+Redirected to http://127.0.0.1:3000/offers/list_offers
+  [1m[35m (163.8ms)[0m  COMMIT
+Completed 302 Found in 813ms (ActiveRecord: 807.4ms)
+
+
+Started GET "/offers/list_offers" for 127.0.0.1 at 2014-11-07 15:18:11 +0100
+Processing by OffersController#list_offers as HTML
+Completed 500 Internal Server Error in 3ms
+
+ActionView::MissingTemplate (Missing template offers/list_offers, application/list_offers with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder, :haml]}. Searched in:
+  * "/home/gaci/Documents/BEP/app/views"
+  * "/home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/devise-3.3.0/app/views"
+  * "/home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/rails_admin-0.6.3/app/views"
+  * "/home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/kaminari-0.16.1/app/views"
+):
+  app/controllers/offers_controller.rb:35:in `list_offers'
+
+
+  Rendered /home/gaci/.rvm/gems/ruby-2.1.2@rails-4/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.5ms)

@@ -16,58 +16,27 @@
 			</div>
 		</div>
 	</div>
-
-	<!-- Features -->
-	<div id="features-wrapper">
-		<div class="container">
-			<div class="row">
-				<div class="4u">
-				
-					<!-- Box -->
-						<section class="box feature">
-							<a href="#" class="image featured"><%=image_tag 'avion1.jpg', alt: ''%></a>
-							<div class="inner">
-								<header>
-									<h2>Avion</h2>
-									<p>Maybe here as well I think</p>
-								</header>
-								<p>Phasellus quam turpis, feugiat sit amet in, hendrerit in lectus. Praesent sed semper amet bibendum tristique fringilla.</p>
-							</div>
-						</section>
-
-				</div>
-				<div class="4u">
-				
-					<!-- Box -->
-						<section class="box feature">
-							<a href="#" class="image featured"><%=image_tag 'voiture.jpeg', alt: ''%></a>
-							<div class="inner">
-								<header>
-									<h2>Voiture</h2>
-									<p>This is also an interesting subtitle</p>
-								</header>
-								<p>Phasellus quam turpis, feugiat sit amet in, hendrerit in lectus. Praesent sed semper amet bibendum tristique fringilla.</p>
-							</div>
-						</section>
-
-				</div>
-				<div class="4u">
-				
-					<!-- Box -->
-						<section class="box feature last">
-							<a href="#" class="image featured"><%=image_tag 'bateau.jpeg', alt: ''%></a>
-							<div class="inner">
-								<header>
-									<h2>Bateau</h2>
-									<p>Here's another intriguing subtitle</p>
-								</header>
-								<p>Phasellus quam turpis, feugiat sit amet in, hendrerit in lectus. Praesent sed semper amet bibendum tristique fringilla.</p>
-							</div>
-						</section>
-
-				</div>
-			</div>
-		</div>
+	<div class='clear'></div>
+	<div>
+		<table class='default' >
+			<thead>
+				<tr>
+					<th>depart</th>
+					<th>destination</th>
+				</tr>
+			</thead>
+			<tbody>
+				<% Offer.all.each do |offer|%>
+					<tr>
+						<td><%= offer.departure %></td>
+						<td><%= offer.destination %></td>
+					</tr>		
+				<% end %>
+			</tbody>
+		</table>
+		
 	</div>
+
+
 
 	<%=render 'footer'%>

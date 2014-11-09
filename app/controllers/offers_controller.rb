@@ -11,11 +11,11 @@ class OffersController < ApplicationController
 
 	def create
 		@offer = Offer.new(offer_params)
-		@offer.subscribe(OfferObserver.new)
-		@offer.on(:after_create) { |offer| 
-			redirect_to list_offers_offers_path
-		}
 		@offer.save
+
+		respond_to do |format|
+			format.html{ redirect_to offers_path }
+		end
 	end
 
 
